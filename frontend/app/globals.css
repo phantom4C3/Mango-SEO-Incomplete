@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+/* -----------------------------
+   Theme Colors
+-------------------------------- */
+:root {
+  --background: #0a0a0a; /* Dark black background */
+  --foreground: #ededed; /* Light foreground text */
+  --accent: #ffb600;     /* Mango yellow for highlights, buttons, links */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Force dark theme */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Links / buttons accent color */
+a, button, .highlight {
+  color: var(--accent);
+}
+
+/* Scrollbars (optional) for dark theme consistency */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--foreground);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--foreground);
+}
+
+/* Inputs / Textareas */
+input, textarea, select {
+  background-color: #1a1a1a;
+  color: var(--foreground);
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+/* Buttons */
+button {
+  background-color: var(--accent);
+  color: var(--background);
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #e6a800; /* Slightly darker mango yellow on hover */
+}
+
+/* Optional: for dark theme markdown / editor content */
+.prose {
+  color: var(--foreground);
+  a {
+    color: var(--accent);
+  }
+  strong {
+    color: var(--foreground);
+  }
+  code {
+    background-color: #1a1a1a;
+    color: var(--accent);
+  }
+}

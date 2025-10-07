@@ -1,0 +1,3783 @@
+https://seobotai.com/blog/seobot-the-ai-blog-generator-that-actually-ranks-on-google/
+
+
+ 
+# 📋 Complete Feature List of MangoSEO
+
+### 1. **AI-Powered Content Generation**
+
+* Automatic research of website, audience, and keywords.
+* SEO-optimized article generation (Listicles, How-to Guides, Checklists, Q\&A, Versus, Roundups, Ultimate Guides).
+* Article length: **\~3000–4000 words** (long-form).
+* Supports **50+ languages**.
+* Rich media insertion:
+  * Images (Google Images- prefer nano banana model)
+  * YouTube video embeds
+  * Tables & lists
+* Automatic **internal & external linking**.
+* Backlinks (volume depends on plan, e.g., Enterprise).
+* **Google scraping & research** for top-performing competitor analysis.
+* **Facts checking system** with **source citations**.
+* **Anti-hallucination reflection** (reduces AI factual errors).
+* **Anti-typo** and grammar correction.
+### 2. **SEO Content Analysis & Blueprinting**
+
+* Analyze **top 10–30 Google results** for a target keyword.
+* Generate a **blueprint report** including:
+
+  * Recommended headings (H2/H3 structure).
+  * **Semantic keywords (LSI terms)** to include.
+  * Recommended **optimal content length**.
+  * **Questions to Answer** (from Google PAA, forums, etc.).
+  * **Sentiment analysis** of top content.
+### 3. **Content Planning & Scheduling**
+
+* Create **weekly content plans** based on site analysis.
+* Users can **approve, decline, or moderate** AI-suggested articles.
+* Content scheduling tied to subscription tier (e.g., 3–300 articles/month).
+### 4. **Content Lifecycle Management**
+
+* **Regular article updates** to keep content fresh.
+* **Monthly article re-linking** for SEO (refreshes internal links).
+### 5. **SEO Auditing**
+
+* Website crawling to detect issues such as:
+
+  * Missing meta tags
+  * Slow page speed
+  * Broken links
+  * Image optimization problems
+
+### 6. **Keyword Research & Clustering**
+
+* Find new keyword opportunities.
+* **Keyword clustering**: group related terms (e.g., “best coffee maker,” “coffee machine,” “coffee brewer”).
+### 7. **Rank Tracking**
+
+* Track daily Google search rankings for target keywords.
+* Monitor **impressions, clicks, CTR** over time.
+### 8. **Internal Linking Engine**
+
+* Automatically links new articles to relevant site pages.
+* Improves **navigation** and **SEO structure**.
+### 9. **CMS Integration & Auto-Sync**
+
+* **Auto-sync publishing** directly to CMS.
+* Supported CMS:
+
+  * WordPress
+  * Webflow
+  * Ghost
+  * Shopify
+  * Wix
+  * Notion
+  * HubSpot
+  * Framer
+  * Bits & Bytes- to be built - frontend and backend ai builder
+* Developer Integrations:
+
+  * **Next.js**
+  * **REST API**
+  * **Webhooks**
+
+### 10. **Analytics Dashboard**
+
+* Usage stats:
+
+  * Articles generated
+  * Impressions
+  * Clicks
+  * CTR
+* Subscription details (plan, limits, renewals).
+* Notifications.
+
+### 11. **Subscription Management**
+
+* Tiered pricing plans:
+  1 credit = 1 blog generated
+  * Starter: \$19/mo – 3 articles
+  * Beginner: \$49/mo (14% off) – 9 articles
+  * Pro: \$99/mo (22% off) – 20 articles
+  * Ultimate: \$199/mo (37% off) – 50 articles
+  * Enterprise: \$499/mo – 100 articles 
+  * Extra: \$799/mo (40% off) – 150 articles
+  * Mega: \$1499/mo (45% off) – 300 articles
+* All tiers include:
+
+  * \~3000 words/article
+  * Images in articles + Related YouTube videos
+  * Backlinks + internal/external linking
+  * Google scraping, fact-checking, anti-hallucination
+  * Regular updates & monthly re-linking
+  * CMS auto-sync + integrations
+* Payment & billing handled via **Lemon Squeezy, Stripe, or Dodo**.
+* Supports subscription changes, cancellations, renewals.
+
+Article_types:
++ Listicles [ex_1] [ex_2]
++ How-to Guides [ex]
++ Checklists [ex]
++ QA Articles [ex]
++ Versus Articles [ex]
++ Roundups [ex]
++ Ultimate Guides [ex]
+
+
+### 12. **User Profile & Settings**
+
+* Displays:
+
+  * User information
+  * Uploaded articles
+  * Subscription status
+  * Usage analytics
+* Allows:
+
+  * CMS integration setup
+  * Notification preferences
+
+### 13. **Testing & Security (Platform Reliability)**
+
+* **Unit Tests**: Jest + React Testing Library.
+* **API Tests**: Postman / Supertest.
+* **Security Tests**: OWASP ZAP vulnerability scanning.
+* **Performance Tests**: Lighthouse for speed & SEO.
+### 14. Automated Onboarding → 4 features
+
+* *** **One-click onboarding (just URL + Go)
+* **Auto research of site, audience, keywords
+* **Auto content plan generation
+* **Agent workflow (100s of tasks/jobs per article) 
+
+
+
+
+
+
+MangoSEO
+WordPress
+Webflow
+Shopify
+Ghost
+Wix
+Framer
+HubSpot
+Notion
+Medium
+Squarespace
+Blogger
+Subsctack
+Custom Integrations
+Next.js
+REST API
+Webhooks
+CMS Platform	Integration Support
+
+
+
+
+
+
+file folder structure
+mangoSEO/
+├── frontend/                         # Next.js 14 (App Router) + TypeScript
+    ├── package.json
+│   ├── app/
+│   │   ├── (marketing)/              # Public landing pages
+│   │   │   ├── page.tsx              # Landing page
+│   │   │   ├── features/
+│   │   │       └── page.tsx 
+│   │   ├── app/                      # MAIN EDITOR: Guided Conversational Interface
+│   │   │   ├── page.tsx              # The Conversational Editor
+│   │   │   ├── layout.tsx            # Provides layout/context for /app/*
+│   │   │   └── loading.tsx 
+│   ├── components/
+│   │   ├── ui/                       # Shadcn/UI & Base Components
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   ├── input.tsx
+│   │   │   ├── select.tsx
+│   │   │   ├── textarea.tsx
+│   │   │   ├── badge.tsx
+│   │   │   └── ...                   # All other shadcn components
+│   │   ├── app/                      # MAIN EDITOR COMPONENTS
+│   │   │   ├── conversational-ui/
+│   │   │   │   ├── chat-interface.tsx 
+│   │   │   │   ├── terminal-io.tsx → your green-text simulation logs
+│   │   │   │   ├── message-bubble.tsx       # Renders a single Q/A (AI or User)
+│   │   │   │   ├── option-selector.tsx      # Renders buttons/menus for choices
+│   │   │   │   ├── input-field.tsx          # For free-form text input
+│   │   │   │   └── progress-indicator.tsx  # Shows progress for long tasks                    # MAIN EDITOR COMPONENTS
+│   │   │   ├── main-editor/
+│   │   │   │   ├── editor-top-bar.tsx  
+│   │   │   │   ├── editor.tsx  
+│   │   │   │   ├── autopilot-toggle.tsx  
+│   │   │   │   ├── menu-popup.tsx  
+│   │   │   │   ├── blog-preview-modal.tsx
+│   │   │   │   └── 
+│   │   │   └── side-panel/              # Settings, Usage Stats, CMS Setup, article preview- new popup, quick stats,  Traditional List View, List of all generated articles, future scheduled, Detail view for a single article
+│   │   │       ├── onpageseo/              
+│   │   │       └── blog-writer/              
+│   │   │           ├── article-editor-panel.tsx         
+│   │   │           ├── audit-results-panel.tsx → your green-text simulation logs
+│   │   │           ├── blueprint-panel.tsx        
+│   │   │           ├── side-panel.tsx        
+│   │   │           └── content-queue.tsx       # - already published, to be puvlished- add approve, decline, shediule buttons in each queue 
+│   │   ├── marketing/                      # Marketing page components
+│   │   │   ├── hero-section.tsx
+│   │   │   ├── pricing-cards.tsx
+│   │   │   └── ...
+│   │   ├── settings/                        # Components for profile settings in sidebar
+│   │   │   ├── settings-modal.tsx
+│   │   │   ├── subscription-card.tsx
+│   │   │   └── cms-integration-card.tsx
+│   │   └── blog/                        # Components for generated blogs
+│   │       ├── article-list.tsx
+│   │       ├── article-card.tsx
+│   │       ├── blog-preview-modal.tsx
+│   │       └── search-filter.tsx
+│   ├── lib/  
+│   │     ├── formatters.ts
+│   │     ├── types.ts
+│   │     └── constants.ts
+│   ├── stores/                               # State Management (Zustand)
+│   │   ├── use-user-store.ts                # User data & subscription
+│   │   ├── use-task-store.ts                 
+│   │   ├── use-cms-store.ts                # Zustand store: manage CMS connection states
+│   │   └── index.ts
+    ├── providers/
+    │   ├── user-provider.tsx
+    │   ├── subscription-provider.tsx
+    │   └── supabase-provider.tsx 
+│   └── public/
+│       ├── icons/
+│       └── images/
+│
+├── backend/                                 # FastAPI (Main API & Orchestration)
+│   ├── src/publish_status.py
+│   │   ├── api/
+│   │   │   ├── v1/
+│   │   │   │   ├── endpoints/              # API Routes
+│   │   │   │   │   ├── auth.py             # Expose login/signup endpoints.
+│   │   │   │   │   ├── orchestrate.py          # Handles article generation, planning, lifecycle
+│   │   │   │   │   ├── batch_deploy.py          # Handles article generation, planning, lifecycle
+│   │   │   │   │   ├── seo_analysis.py         # Handles article generation, planning, lifecycle
+│   │               ├── batch_seo.py          # Exposed: crawl & audit
+│   │   │   │   │   ├── health.py              # Handles blueprinting, audit, keywords, ranking
+│   │   │   │   │   ├── publish_cms.py               
+│   │   │   │   │   ├── seo_deploy.py              
+│   │   │   │   │   ├── publish_status.py               
+│   │   │           └── topics.py
+│   │   │   │   ├── webhooks/               # Optional modular webhooks   
+│   │   │   │   │   └── lemonsqueezy.py     # Corrected extension (was .ts)
+│   │   │   │   └── routers.py              # Main router imports all endpoints
+│   │   ├── services/                        # Core Business Logic
+│   │   │   ├── user_service.py    
+│   │   │   ├── realtime_listener_service.py     
+│   │   │   ├── seo_orchestration_service.py     
+│   │   │   ├── scheduler_service.py
+│   │   │   └── orchestration_service.py   # Manages the AI worker for complex tasks
+│   │   ├── models/                          # Pydantic Models (Schemas)
+│   │   │   └── models.py
+│   │   ├── db/                               # Database Layer
+│   │   │   ├── repository.py
+│   │   │   ├── cache.py             # Concrete implementation for redis
+│   │   ├── integrations/                     # Third-Party Client wrappers
+│   │   │   ├── cms/
+            ├──ai_blog_writer_client.py         # Client to call the AI-Worker microservice
+            └── api/         # Client to call the AI-Worker microservice
+                ├── cms_api_client.py               # Generic REST API client for any CMS
+                ├── webhook_handler.py              # Handles incoming CMS webhooks
+                └── 
+│   │   ├── core/
+│   │   │   ├── config.py
+│   │   │   ├── security.py
+│   │   │   ├── logging.py
+│   │   │   ├── celery.py
+│   │   │   ├── supabase.py
+│   │   │   ├── lemonsqueezy.py
+│   │   │   ├── redis.py 
+│   │   │   └── exceptions.py
+│   │   ├── utils/
+│   │   │   ├── content_helper.py    #formatting 
+│   │   │   ├── url_helpers.py
+│   │   │   ├── webhook_helpers.py              # Verify signature, parse payload
+│   │   └── main.py
+│   ├── tests/
+│   │   ├── api/
+│   │   ├── services/
+│   │   ├── integrations/
+│   │   └── conftest.py 
+│   └── requirements.txt
+│
+├── ai-worker/                              # Dedicated AI Microservice
+│   ├── app/
+│   │   ├── api/
+│   │   │   └── endpoints/
+│   │   │       ├──  generate.py             # Single endpoint: POST /generate
+│   │   │       ├──  seo_pixel.py        
+│   │   │       └──  suggest-topics.py
+│   │   ├── agents/                          # Feature 14: Agent workflows
+│   │   │   ├── research_agent.py
+│   │   │   ├── competitor_analysis_agent.py
+│   │   │   ├── keyword_research_agent.py
+│   │   │   ├── writing_agent.py
+│   │   │   ├── search_intent_agent.py
+│   │   │   ├── seo_analysis_agent.py
+│   │   │   ├── outline_agent.py 
+│   │   │   ├── media_agent.py              # Uses nano banana model for images
+│   │   │   ├── fact_check_agent.py         # Anti-hallucination, citations
+│   │   │   └── quality_agent.py            # Grammar, typo, final check
+│   │   ├── models/
+│   │   │   ├── models.py
+│   │   ├── core 
+    │   │   ├── security.py 
+    │   │   ├── config.py
+│   │   ├── tools/  
+│   │   │   ├── google_search_tool.py 
+│   │   ├── services/
+│   │   │   ├── cache.py 
+│   │   │   ├── pixel_service.py
+│   │   │   ├── relinking_service.py 
+│   │   │   ├── ai_clients.py 
+│   │   │   ├── cloudinary.py
+│   │   │   ├── serpapi.py
+│   │   │   └── supabase_client.py
+│   │   │   └── redis_client.py
+│   │   ├── main.py
+    │   └── pipelines/                           # ✅ NEW: for multi-agent orchestration pipelines
+    │       ├── blog_generation_pipeline.py
+    │       ├── seo_audit_pipeline.py
+    │       └── keyword_research_pipeline.py
+    │       └── seo_audit_pipeline.py
+│   └── requirements.txt 
+onpageseo-service/
+├── app/
+│   ├── api/
+│   │   └── v1/
+│   │       └── endpoints/
+│   │           ├── seo_analysis.py          # Exposed: crawl & audit
+│   │           ├── seo_recommendations.py   # Internal: AI+rule recs
+│   │           └── seo_deploy.py            # Exposed: deploy fixes
+│   ├── core/
+│   │   ├── config.py                        # Env vars (API keys, Supabase URL, etc.)
+│   │   └── security.py                      # Service-to-service auth
+│   ├── services/ 
+│   │   ├── analyzer.py                      # Orchestrates parsing/validation/scoring
+│   │   ├── recommender.py                   # Collect recs from agents
+│   │   ├── deployer.py                      # Apply fixes → writes to Supabase
+│   │   ├── monitor.py                       # Track & log improvements
+│   │   └── batch_deployer.py                       
+│   ├── public/ 
+│   │   ├── seo-pixel.js                    
+│   ├── agents/
+│   │   ├── keyword_agent.py                 # AI: keyword expansion
+│   │   ├── semantic_agent.py                # AI: rewrite metas & titles
+│   │   ├── schema_agent.py                  # AI: schema.org generation
+│   ├── utils/
+│   │   ├── parsers.py                       # HTML/DOM/text parsing
+│   │   ├── validators.py                    # Rule-based checks
+│   │   └── scorer.py                        # SEO scoring logic
+│   ├── models/
+│   │   └── models.py                        # Pydantic schemas for requests/responses
+│   ├── middleware/
+│   │   └── rate_limiter.py                  # Basic rate-limiting/logging (exposed endpoints)
+│   ├── clients/
+│   │   ├── supabase_client.py               # Direct persistence (like AI worker)
+│   │   ├── redis_client.py                  
+│   │   └── ai_client.py                     # Wrapper for AI APIs (optional, minimal calls)
+│   └── tasks/                   
+│       └── batch_tasks.py                    # Async workflows (batch audits, scheduled checks)
+├── tests/
+│   ├── test_analysis.py
+│   ├── test_recommendations.py
+│   ├── test_deploy.py
+│   └── test_agents.py
+├── Dockerfile
+├── requirements.txt
+│ 
+├── README.md 
+
+
+
+
+
+
+
+
+
+
+
+
+mangoseo.com: The main website for MangoSEO, providing information about the product and its features.
+app.mangoseo.com: The web application or dashboard for MangoSEO, where users can log in to access the tool's features and functionality.
+
+
+
+
+
+
+
+
+
+
+
+# Subscriptions
+
+Unused Credits Carry Over: Unused credits don't expire and automatically carry over to the next billing cycle, even after canceling your subscription.
+Upgrading Subscriptions: When upgrading your subscription plan, you'll be charged the full amount of the new plan immediately, and you'll keep any unused credits from your previous plan. You'll also receive the full allocation of credits from your new plan.
+Credits Don't Expire: SEObot credits don't have an expiration date, allowing you to use them anytime. 
+Subscription Upgrade
+When upgrading your subscription plan, you'll be charged the full amount of the new plan immediately. We don't offer prorated upgrade charges because SEObot credits don't expire. This means you'll keep any unused credits from your previous plan and receive the full allocation of credits from your new plan.
+For example, if you upgrade from a Pro plan ($99/month, 20 credits) to an Enterprise plan ($499/month, 100 credits), you'll be charged the full $499 for the new plan, regardless of when you upgrade during your billing cycle. You'll keep any remaining credits from your Pro plan and receive 100 credits from your Enterprise plan. So, if you had 20 credits left from your Pro plan, you'd have 120 credits after the upgrade.
+If you would like to receive a prorated refund for the remaining credits of your previous subscription, please contact our support team via the support chat at https://app.seobotai.com/. We can manually calculate and refund the difference between your old and new plans. Please note that any refund will lead to an adjustment in your credit balance.
+Subscription Downgrade
+You will NOT be charged immediately when you downgrade your subscription plan. The new, reduced rate will take effect at the beginning of your next billing cycle.
+check this data and tell me what credits system is ueed- something related to build minutes also these are mangoseo sub plans 
+# Subscriptions
+
+Unused Credits Carry Over: Unused credits don't expire and automatically carry over to the next billing cycle, even after canceling your subscription.
+Upgrading Subscriptions: When upgrading your subscription plan, you'll be charged the full amount of the new plan immediately, and you'll keep any unused credits from your previous plan. You'll also receive the full allocation of credits from your new plan.
+Credits Don't Expire: SEObot credits don't have an expiration date, allowing you to use them anytime. 
+Subscription Upgrade
+When upgrading your subscription plan, you'll be charged the full amount of the new plan immediately. We don't offer prorated upgrade charges because SEObot credits don't expire. This means you'll keep any unused credits from your previous plan and receive the full allocation of credits from your new plan.
+For example, if you upgrade from a Pro plan ($99/month, 20 credits) to an Enterprise plan ($499/month, 100 credits), you'll be charged the full $499 for the new plan, regardless of when you upgrade during your billing cycle. You'll keep any remaining credits from your Pro plan and receive 100 credits from your Enterprise plan. So, if you had 20 credits left from your Pro plan, you'd have 120 credits after the upgrade.
+If you would like to receive a prorated refund for the remaining credits of your previous subscription, please contact our support team via the support chat at https://app.seobotai.com/. We can manually calculate and refund the difference between your old and new plans. Please note that any refund will lead to an adjustment in your credit balance.
+Subscription Downgrade
+You will NOT be charged immediately when you downgrade your subscription plan. The new, reduced rate will take effect at the beginning of your next billing cycle.
+
+  * Starter: \$19/mo – 3 articles
+  * Beginner: \$49/mo (14% off) – 9 articles
+  * Pro: \$99/mo (22% off) – 20 articles
+  * Ultimate: \$199/mo (37% off) – 50 articles
+  * Enterprise: \$499/mo – 100 articles 
+  * Extra: \$799/mo (40% off) – 150 articles
+  * Mega: \$1499/mo (45% off) – 300 articles 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The backend handles all web/API traffic.
+The AI worker is a queue consumer with pipelines.
+They communicate via Redis, not HTTP.
+FastAPI should only be in the backend, not the worker.
+
+
+
+
+
+
+🎯 How It Works (User Experience)
+User logs in and is taken to a single URL: 
+They see a full-screen terminal-like interface.- main editor
+Of course. Based on the transcript and your provided features, here is the final, comprehensive draft of how MangoSEO (formerly SEObot) works, incorporating every single point mentioned.## **🚀 Final Draft: How MangoSEO Works - Complete Workflow & Features**
+
+### **1. Onboarding & Initial Setup (One-Click)**
+*   User enters their **website URL** (e.g., `monostory.com`) and clicks "Go".
+*   MangoSEO automatically **scrapes and analyzes** the provided website.
+*   It extracts context from key pages like:
+    *   **Frequently Asked Questions (FAQ)**
+    *   **"About Us" page**
+    *   **Existing blog content**
+*   This analysis identifies:
+    *   **Target audience** and their **pain points**
+    *   **Product usage** patterns
+    *   **Brand voice and style**
+*   The user can further **customize settings**:
+    *   **Image Style Preference:** Choose between photorealistic, abstract, oil painting, watercolor, etc.
+    *   **Tone:** Set to professional, neutral, clean, etc.
+    *   **Content Frequency:** Set a number of articles to generate per week (e.g., 4 articles/week).
+*   This process creates a customized **content plan** based on the site analysis.
+### **2. Content Planning & Ideation**
+*   MangoSEO runs continuously in the background, **auto-generating headline ideas**.
+*   These ideas are presented to the user in a **dashboard** for review.
+*   The user can **approve, decline, or moderate** the AI-suggested article titles.
+*   Approved headlines are moved to a **scheduling queue**.
+*   The planning is **tied directly to the site analysis** performed during onboarding.
+### **3. AI-Powered Content Generation**
+*   For each approved headline, MangoSEO executes a complex **agent workflow** (100s of tasks) to generate the article.
+*   The process includes:
+    *   **Research:** Deep dive into the topic using Google scraping and competitor analysis.
+    *   **Blueprinting:** Analyzing top 10-30 Google results to determine optimal structure (H2/H3 headings), semantic keywords (LSI terms), content length, and questions to answer.
+    *   **Writing:** Generating the full, long-form article (~3000-4000 words).
+    *   **Enhancement:**
+        *   **Fact-Checking & Citations:** A dedicated agent verifies facts and adds source citations.
+        *   **Anti-Hallucination:** A reflection loop minimizes AI factual errors.
+        *   **Anti-Typo/Grammar:** A final quality check ensures clean copy.
+    *   **Rich Media Insertion:** Automatically adds:
+        *   **Images** (Sourced from Google Images, preferring a "nano banana" model, or services like Unsplash).
+        *   **YouTube Video Embeds**
+        *   **Tables & Lists**
+    *   **SEO Optimization:** Automatically generates:
+        *   **Slug** (URL-friendly post name)
+        *   **Meta Description**
+        *   **Meta Keywords**
+    *   **CTA Placement:** Embeds relevant calls-to-action within the article body.
+### **4. Publishing & CMS Integration**
+*   Users have two publishing options:
+    *   **A) Manual Copy-Paste:** The user copies the generated article (in HTML or Markdown) and manually pastes it into their CMS (e.g., WordPress, Webflow).
+    *   **B) API Auto-Sync (Advanced):**
+        *   MangoSEO provides a **unique API key**.
+        *   The user integrates this key into their website project (e.g., a Next.js site).
+        *   This involves:
+            *   Adding the key to environment variables (e.g., `.env` file, Vercel/Netlify config).
+            *   Installing the MangoSEO client library.
+            *   Modifying the site's code to **fetch posts dynamically** from the MangoSEO API instead of using static files.
+            *   Handling **CORS issues** (a common hurdle where local development servers are blocked from accessing the API, often fixed with a proxy or using a demo key for local dev).
+            *   Configuring **dynamic routing** so each article gets its own page (e.g., `/blog/[slug]`).
+        *   Once integrated, articles are **automatically published** to the user's site without manual effort.
+*   **Supported Platforms:** WordPress, Webflow, Ghost, Shopify, Wix, Notion, HubSpot, Framer, and custom sites (e.g., Next.js) via REST API and Webhooks.
+### **5. Content Lifecycle Management**
+*   **Regular Updates:** MangoSEO periodically suggests and implements updates to existing articles to keep content fresh and relevant.
+*   **Monthly Re-linking:** Automatically refreshes internal links within articles to maintain strong SEO structure.
+### **6. SEO & Performance Features**
+*   **SEO Auditing:** Can crawl a website to detect issues like missing meta tags, slow page speed, broken links, and image optimization problems.
+*   **Keyword Research & Clustering:** Finds new keyword opportunities and groups related terms (e.g., “best coffee maker,” “coffee machine”).
+*   **Rank Tracking:** Tracks daily Google search rankings for target keywords, monitoring impressions, clicks, and CTR over time.
+*   **Internal Linking Engine:** Automatically links new articles to relevant existing pages on the site.
+*   **Backlinks:** Provides backlinking services, with volume depending on the subscription tier.
+### **7. Analytics & Subscription Management**
+*   **Analytics Dashboard:** Provides users with usage statistics, including articles generated, impressions, clicks, and CTR.
+*   **Subscription Tiers:** Offers tiered pricing (Starter: $19/mo for 3 articles -> Mega: $1499/mo for 300 articles). All tiers include full features (images, videos, linking, fact-checking, etc.).
+*   **Billing:** Handled via Lemon Squeezy, Stripe, or Dodo. Supports changes, cancellations, and renewals.
+### **8. User Profile & Settings**
+*   **Dashboard:** Displays user information, uploaded articles, subscription status, and usage analytics.
+*   **Configuration:** Allows users to manage CMS integration setup and notification preferences.
+*   **Multi-Lingual Support:** Generates content in 50+ languages.
+### **10. Technical Reliability**
+*   **Testing:** Employs Unit Tests (Jest + React Testing Library), API Tests (Postman/Supertest).
+*   **Security:** Uses OWASP ZAP for vulnerability scanning.
+*   **Performance:** Uses Lighthouse for speed and SEO audits.### **User Workflow Summary**
+1.  **Sign Up & Onboard:** Enter URL -> AI analyzes site -> Set preferences.
+2.  **Ideate:** Review and approve AI-generated headlines in the dashboard.
+3.  **Generate:** AI writes, fact-checks, and formats the complete article.
+4.  **Publish:** Choose manual copy-paste or automate via API integration.
+5.  **Manage:** Track performance in analytics dashboard and update content as needed.
+This system positions MangoSEO as an all-in-one, automated content production and distribution engine for SEO.
+
+
+
+
+
+Passing data between microservices
+👉 onpageseo analyze → recommend → pass/save data → ai-worker fetch + generate blog
+✅ Exactly. That’s the right pattern:
+onpageseo-service runs semantic/keyword/schema analysis.
+Results saved in DB (seo_analysis_results table for task_id).
+ai-worker checks if seo_analysis_results already exist for task_id before prompting AI.
+If yes → reuse.
+If no → request analysis.
+This avoids re-running the same AI calls and ensures a tight integration between SEO + content gen.
+Divide Features Between Microservices:
+OnPageSEO Service Should Handle:
+✅ Website scraping & technical analysis
+✅ Competitor SEO analysis
+✅ Keyword research (search volume, difficulty)
+✅ Technical recommendations (meta tags, schema, etc.)
+✅ Deployment to CMS/platforms
+✅ Performance tracking (Search Console integration)
+AI Worker Service Should Handle:
+✅ Content strategy & topic trees
+✅ Content generation & optimization
+✅ Research & fact-checking
+✅ Internal linking strategy
+✅ Multilingual content generation
+✅ Human-in-the-loop moderation
+
+
+
+
+
+
+
+
+What MangoSEO Can Send via Custom Integration
+Content: Full article body (HTML, Markdown, or JSON).
+Metadata: Title, slug, description, keywords, categories, tags.
+Media: Images can be included as URLs (e.g., hosted on Cloudinary or your CDN).
+Send clean HTML/Markdown for the article structure.
+Host images externally and provide URLs.
+Let the receiving site apply styling & interactivity via its templates/CSS/JS.
+Optional: Add classes in the HTML (<p class="seo-text">) so the site can style elements easily.
+
+
+
+
+
+
+
+
+
+Do we need different DB clients for each service?
+Yes — since you’re deploying frontend, backend, ai-worker, onpageseo separately, each microservice will need its own Supabase client instance (with its own service key or anon key depending on context).
+BUT 👉 all of them should read/write to the same Supabase DB (shared schema). Otherwise, inter-service workflows break (SEO analysis results wouldn’t reach ai-worker, etc.).
+Think: one shared DB schema but multiple client instantiations in each service.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MANUAL inline editing for BLOGS
+When the user clicks Continue Editing:
+The modal switches into edit mode.
+The article content becomes a textarea/input field inside the modal.
+The user can edit inline, without leaving the modal.
+After editing, the modal can:
+Save changes locally (state only), and/or
+Push changes to the database (Supabase), if you want persistence.
+Render the full article as HTML in preview mode (dangerouslySetInnerHTML).
+When switching to “edit mode”:
+Extract text from the HTML (or allow editing the raw content string).
+Keep image/video embed tags visible as text references that users can remove.
+After editing, save the updated raw content back to the DB.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Since you’re using **Supabase**, the architecture for OAuth/login can be simplified a lot. Let’s break this down carefully:
+
+---
+
+### 1️⃣ Should you use Google Login?
+
+* **Yes, if you want OAuth**: Supabase has built-in support for third-party providers (Google, GitHub, etc.).
+* **Why it makes sense**:
+
+  * Supabase handles the OAuth flow, token creation, and user management for you.
+  * Reduces your need to manage passwords or create a separate `create_user` flow for social logins.
+  * Works well with the JWT-based auth you already have in `security.py`.
+
+---
+
+### 2️⃣ Where should the OAuth logic live?
+
+* **Frontend**:
+
+  * Typically initiates the OAuth flow: user clicks “Login with Google,” browser redirects to Google auth.
+  * Handles the callback URL from Google/Supabase.
+  * Can directly receive the JWT/session token from Supabase and store it (localStorage, cookies, etc.).
+
+* **Backend**:
+
+  * Can be used if you want a **server-side flow**, e.g., for:
+
+    * Exchanging OAuth code for tokens securely.
+    * Storing additional user metadata in your database.
+    * Issuing your own JWTs that wrap the Supabase identity token.
+  * Otherwise, if using Supabase’s hosted auth and built-in JWT, backend can just **verify the token** (using `get_current_user`) and enforce access/premium checks.
+
+---
+
+### 3️⃣ Recommended approach
+
+1. **Frontend initiates login** with Supabase’s Google provider:
+
+   ```javascript
+   const { data, error } = await supabase.auth.signInWithOAuth({
+     provider: 'google',
+   });
+   ```
+2. **Supabase redirects back** to your frontend with an access token.
+3. **Frontend stores token** and passes it in `Authorization: Bearer <token>` headers for backend API calls.
+4. **Backend uses `get_current_user`** to decode the JWT and fetch the user from Supabase (`fetch_one`), exactly as your `security.py` does.
+
+* Optional: If you want **server-side token exchange**, create a small endpoint in `backend/src/api/v1/endpoints/auth.py` to handle the OAuth callback and issue your own JWT.
+
+---
+
+### ✅ Where logic lives summary
+
+| Component | Responsibility                                                     |
+| --------- | ------------------------------------------------------------------ |
+| Frontend  | Initiate OAuth, handle redirect, store access token                |
+| Backend   | Verify token, fetch user info, enforce premium/subscription checks |
+| Supabase  | Manage OAuth provider, store user info, handle JWT issuance        |
+
+---
+
+💡 **Tip:** Since you’re already using Supabase, it’s simpler to rely on Supabase OAuth fully and keep backend minimal — only verify the token and enforce access rules.
+
+---
+
+If you want, I can **sketch the minimal flow for Google login using Supabase** that integrates with your existing `security.py` and JWT/premium checks. It will be ready to drop into your frontend + backend.
+
+Do you want me to do that?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Assessing traffic impact
+Huge traffic might cause lag given the current structure.
+The system needs evaluation for scalability under high load.
+Deploying marketing to one URL and the main editor to another is possible.
+Different frontends and backends may be required for separate URLs.
+The current setup includes detailed components for content planning and dashboards.
+Reviewing component details
+CalendarGenerationModal has styles, types, and test files for integration.
+LiveProgressPanel and QualityGatesPanel are part of CalendarGenerationModal panels.
+CalendarWizardSteps includes GenerateCalendarStep for workflow creation.
+ContentStrategyBuilder features EnhancedTooltip for better user interaction.
+ProgressTracker and StrategyDisplay are components in ContentStrategyBuilder.
+ContentStrategyBuilder includes utils like cssAnimations for dynamic effects.
+Examining strategy components
+DataTransparencyPanel is part of StrategyIntelligence components.
+ReviewProgressHeader and ReviewProgressSection enhance strategy review processes.
+StrategyIntelligence includes hooks like useStrategyActions for functionality.
+FacebookWriter has components like AdCopyHITL for ad creation.
+LinkedInWriter includes components such as ArticleHITL for content creation.
+Analyzing LinkedIn writer components
+CopilotRecommendationsMessage is part of LinkedInWriter for AI suggestions.
+useRecommendations hook enhances LinkedInWriter's AI functionality.
+MainDashboard components include PublishPillarChips for content publishing.
+SEODashboard features SEOCopilotActions for SEO optimization.
+Exploring SEO dashboard components
+AnalysisDetailsDialog and AnalysisTabs are part of SEODashboard for detailed insights.
+EmptyState and ErrorDisplay are shared components for handling UI states.
+Evaluating service files
+Navigation orchestrator and SEO API services are part of the frontend.
+Backend includes debug files like debug_database_data.py for testing.
+Content planning API has monitoring and quality analysis routes for strategy management.
+Investigating content strategy endpoints
+Content strategy endpoints include ai_generation_endpoints.py for AI tasks.
+Let's check the backend API for more content planning routes.
+Analyzing content strategy services
+Enhanced strategy services handle AI analysis and content distribution.
+Quality validation is part of AI analysis for content strategy services.
+Exploring content strategy core
+Core services include constants and field mappings for strategy management.
+Investigating performance services
+Health monitoring and optimization are part of content strategy performance services.
+Examining Facebook writer models
+FacebookWriter models cover ad copy, carousels, and engagement.
+Ad copy service and post service are part of FacebookWriter services.
+Reviewing backend models
+API monitoring and comprehensive user data cache are included in backend models.
+Exploring backend routers
+Backend routers include content_planning.py for strategy management.
+Investigating calendar generation services
+Calendar generation has data processing and quality assessment components.
+Comprehensive user data is processed in calendar generation data services.
+Analyzing prompt chaining steps
+Calendar generation includes phase1, phase2, phase3, and phase4 for prompt chaining.
+Phase2 steps involve step4, step5, and step6 implementations for detailed workflows.
+Examining daily content planning
+Daily schedule generation is part of step8 in phase3 for content planning.
+Timeline coordinator enhances daily content planning in phase3, step8.
+Investigating phase4 steps
+Phase4 includes step10 for performance optimization in calendar generation.
+Engagement optimizer and performance predictor are part of step10 for better results.
+Strategy alignment validation occurs in step11 of phase4 for consistency checks.
+Calendar structure gate ensures quality in final assembly processes.
+Exploring component logic services
+AI research logic is part of component logic services for personalization.
+Component logic includes style detection and web crawler services for analysis.
+LinkedIn services feature content generation and image editing capabilities.
+LLM providers offer audio-to-text and image-to-text generation services.
+Investigating persona services
+Core persona service handles data collection and prompt building.
+SEO tools services include content strategy and enterprise SEO options.
+Exploring migrated AI tools
+AI marketing tools include backlinking and Google Ads generation features.
+AI SEO tools cover technical SEO crawling and image alt text generation.
+Reviewing AI web research tools
+AI web research includes Google search and competitor analysis features.
+AI writers cover Twitter, YouTube, and essay writing among others.
+Investigating blog writer components
+AI blog writer has navigation styles for UI consistency.
+Context manager is part of chatbot custom core for handling interactions.
+Exploring content calendar core
+Content generator and repurposer are part of the content calendar core.
+Content card and optimization components enhance UI in content calendar.
+Investigating content scheduler core
+Conflict resolver and health checker are part of the content scheduler core.
+Content scheduler utils include date handling and error logging for robustness.
+Examining migrated integrations
+Platform adapters include Twitter, Wix, and WordPress for blog publishing.
+Designing file structure
+The Seobot project needs a clear file folder structure based on given repos.
+Planning project scope
+The project must be a production-ready MVP website/webapp with modern conventions.
+Structuring Mango SEO project
+Landing page needs navbar, hero section with success stats, and trust logos.
+Structure1 separates marketing and main editor under one frontend.
+Library section includes traditional list view for generated articles.
+Blueprint-panel shows SEO blueprints, a key feature for users.
+Evaluating agent systems
+Base agent class handles core conversational workflows.
+Zustand manages conversation state, user data, and article cache.
+Reviewing backend services
+Content service handles article generation and planning.
+Backend integrates with Supabase for database operations.
+Analyzing AI worker agents
+Research agent supports content research tasks.
+Defining project requirements
+The project needs a website/webapp with landing, features-info, and profile/auth pages.
+Comparing file structures
+Structure1 uses one frontend with separate marketing and editor routes.
+One frontend can handle both URLs using Next.js routing for marketing and editor.
+Reviewing output panels
+Blueprint-panel displays SEO blueprints for users.
+Audit-results-panel shows SEO audit outcomes, crucial for feature 5.
+Content.ts manages features like content generation and planning.
+Investigating backend endpoints
+Auth.py handles user authentication in the backend.
+Billing.py manages Lemon Squeezy webhooks for payment processing.
+Analyzing AI worker components
+Media agent uses nano banana model for image generation.
+Fact check agent prevents hallucinations with citations.
+The project must use modern conventions like ES6 import/export syntax.
+Planning landing page sections
+Landing page includes navbar, hero section with success stats, and trust logos.
+Privacy and safety are crucial for user data uploaded to the platform.
+Evaluating frontend options
+One frontend can manage both URLs with Next.js App Router's dynamic routing.
+UI components like button.tsx and card.tsx are shared across features.
+Detailing side panel components
+Side panel includes settings, usage stats, and CMS setup for user management.
+Topic-agent handles topic selection for content creation.
+Auth.py ensures secure user authentication in the backend.
+Reviewing backend integrations
+The project must ensure production-ready MVP status with free resources.
+Ensuring user access control
+Non-users get landing page access, while subscribed users unlock features.
+Features page is restricted to subscribed users with tiered subscriptions.
+Landing pages include pricing, features, and blog sections for public access.
+Reviewing main editor components
+Chat-interface manages the conversational UI for user interactions.
+Base-agent.ts supports core conversational workflows for user engagement.
+Agent.ts defines types for the conversational agent system, ensuring type safety.
+Investigating backend API structure
+Auth.py manages user authentication in the backend API.
+Analyzing AI worker models
+Multi-chain setup is part of AI worker models for complex workflows.
+Finalizing file structure
+The final structure must cover frontend and backend, including all features.
+Profile page must fetch data on subscriptions, usage stats, and images uploaded.
+Comparing file structure options
+Structure1 is better; it organizes marketing and editor routes clearly.
+Chat-interface is part of the main editor's conversational UI for user engagement.
+Message-bubble renders Q/A for AI or user interactions in the chat.
+Reviewing profile settings
+Usage-stats.tsx manages user activity tracking in the sidebar.
+Subscription-card.tsx lets users manage their plans in the profile.
+Billing service handles Lemon Squeezy integration for payments.
+Investigating backend services
+User_service.py manages user-related operations in the backend.
+Content_helpers.py assists with content-related backend tasks.
+Profile page must show notifications about subscriptions and usage stats.
+Planning profile page features
+Profile page fetches data on subscriptions, usage stats, and images uploaded.
+Evaluating frontend setup
+One frontend can handle both URLs using Next.js routing.
+Option-selector renders buttons and menus for user choices in conversations.
+Input-field.tsx supports free-form text input for user interactions.
+Article-list.tsx displays generated blogs for user review.
+Investigating backend API structure
+V1 API endpoints manage core backend routes for the project.
+Content.py handles article generation and lifecycle in the backend.
+Reviewing backend models
+Article.py, seo.py, and user.py define schemas for backend operations.
+Analyzing AI worker components
+Google search tool supports research tasks in AI worker.
+Web automation tool automates browser form filling for feature 15.
+Planning project details
+Target audience includes small businesses and SEO professionals needing content tools.
+Finalizing project structure
+The final file folder structure must include all features
+Progress-indicator.tsx shows task progress in the conversational UI.
+Side-panel includes settings and CMS setup for user management.
+Base-agent.ts is an abstract class for all conversational agents.
+Investigating backend endpoints
+Content.py manages article generation and planning in the backend.
+SEO.py handles blueprinting, audit, and keyword ranking in the backend.
+Exploring backend integrations
+Supabase integration supports database operations in the backend.
+Gemini, OpenAI, and Mistral services are part of AI worker for advanced tasks.
+Planning landing page sections
+Landing page must have a why section and a list of all features.
+Final structure includes features in file names for clarity.
+Comparing file structures
+Structure1 is preferred; it keeps marketing and editor routes organized under one frontend.
+Article-editor-panel.tsx allows editing generated articles, a key feature for users.
+Audit-results-panel.tsx displays SEO audit results, essential for feature 5.
+Use-conversation-store.ts manages conversation state, history, and current agent.
+Investigating backend API structure
+Auth.py manages user authentication in the backend API.
+Analytics.py tracks user activity and performance metrics in the backend.
+Supabase.py handles database operations in backend integrations.
+Analyzing AI worker pipelines
+Blog generation and SEO audit pipelines support content and SEO tasks.
+Planning landing page content
+Landing page needs a why section explaining value.
+FAQ section and CTA section are essential for user engagement on the landing page.
+Planning code sharing
+Code can be shared using a monorepo with shared packages for common components.
+Evaluating frontend options
+Blueprint-panel is crucial for showing SEO blueprints to users.
+Side-panel supports settings, usage stats, and CMS setup for user management.
+Use-conversation-store.ts manages conversation state, history, and current agent.
+Detailing backend webhooks
+Webhooks directory handles optional modular integrations in the backend.
+Lemonsqueezy.py manages payment webhooks for subscription handling.
+Analyzing AI worker components
+Research agent supports content research tasks in AI worker.
+The project must ensure production-ready MVP status with free resources.
+Landing page must include a why section and list all features for clarity.
+Ensuring subscription tiers
+Non-users access only the landing page, while subscribed users unlock features.
+Features page is restricted to subscribed users with tiered subscriptions.
+Side-panel includes settings like usage-stats.tsx for user management.
+Base-agent.ts supports core conversational workflows for user engagement.
+Agent types are defined in agent.ts for type safety in conversations.
+Reviewing backend API structure
+Routers.py imports all endpoints for the main backend API.
+Quality agent ensures grammar and typo checks in AI worker processes.
+Exploring AI worker pipelines
+The project must have three pages: landing, features-info, and profile/auth.
+Planning landing page sections
+Profile page must show notifications and allow subscription management.
+Structure1 is better for organizing marketing and editor routes under one frontend.
+App directory organizes main editor routes, including conversational UI components.
+Detailing main editor UI
+Chat-interface is the main container for conversational interactions.
+Base-agent.ts supports core conversational workflows for user engagement.
+Agent types are defined in agent.ts for type safety in conversations.
+Investigating backend API structure
+Auth.py manages user authentication in the backend API.
+Backend services include keyword_service.py for SEO optimization.
+Analyzing AI worker components
+AI worker includes research, outline, writing, and media agents for tasks.
+Profile page must fetch data on subscriptions, usage stats, and images uploaded.
+Profile page allows managing subscriptions and settings for user control.
+Finalizing file structure comparison
+Structure1 is the best; it organizes marketing and editor routes under one frontend.
+Chat-interface is part of the main editor's conversational UI for user engagement.
+Message-bubble renders Q/A for AI or user interactions in the chat.
+Card.tsx and cms-integration-card.tsx are UI components for shared use.
+Reviewing frontend libraries
+Content.ts handles features like content generation and planning.
+Orchestration_service.py manages AI worker tasks in the backend.
+Examining backend tests
+API tests cover backend endpoints for functionality checks.
+Analyzing AI worker agents
+Planning project details
+Target audience includes small businesses and SEO professionals needing content tools.
+Profile page must allow users to manage subscriptions and settings.
+Structure1 is preferred for its clear organization of marketing and editor routes.
+Profile page includes settings like usage-stats.tsx for user management.
+Article-card.tsx displays individual blog cards for user review.
+SEO analysis agent finds competitors for analysis, enhancing feature 2.
+Investigating backend endpoints
+Auth.py handles user authentication in the backend.
+Content.py manages article generation, planning, and lifecycle in the backend.
+AI worker's app directory includes API endpoints for task generation.
+Exploring AI worker tools
+The Seobot project needs a clear file folder structure based on given repos.
+Planning project scope
+Project must be production-ready MVP with modern conventions like ES6 syntax.
+Finalizing landing page sections
+Landing page must include navbar, hero section, and trust logos for credibility.
+Structure1 is better for organizing routes; one frontend can handle both URLs using Next.js routing.
+Library section includes traditional list view for generated articles, with page.tsx for listing and [id]/page.tsx for details.
+Reviewing output panels
+Blueprint-panel shows SEO blueprints, essential for feature 2.
+Base-agent.ts is an abstract class for all conversational agents, supporting core workflows.
+SEO.py handles blueprinting, audit, and keyword ranking in the backend.
+User_service.py manages user-related operations, including profile and settings.
+Investigating backend integrations
+Supabase.py handles database operations, crucial for user data management.
+Infra directory includes Dockerfiles for backend, AI worker, and frontend deployment.- deleted this- tell me if we need it or should i recreate it
+Planning landing page content
+Landing page must have sections like navbar, hero, and trust logos for credibility.
+Evaluating frontend setup
+One frontend can handle both marketing and editor URLs using Next.js routing.
+Audit-results-panel shows SEO audit results, crucial for feature 5.
+Base-agent.ts supports core conversational workflows for user engagement.
+Use-conversation-store.ts manages conversation state, history, and current agent.
+Detailing backend webhooks
+Webhooks handle optional modular integrations in the backend.
+Lemonsqueezy.py manages payment webhooks for subscription handling.
+Analyzing AI worker components
+Research agent supports content research tasks in AI worker.
+Blog generation pipeline supports content creation tasks.
+Reuse cards, headings, and buttons across pages for consistency.
+Privacy and safety are crucial for user data uploaded to the platform.
+
+
+
+
+
+
+
+
+
+
+Use AI for initial cross-linking and internal systems for scheduled relinking. This hybrid approach gives you the best of both worlds. 
+relinbk every month 
+Dynamic Linking (Recommended Approach)
+Keep published content intact
+Store links separately in database
+Render links dynamically when serving content
+This is what you should implement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Perfect 👍 — let’s make this **tangible**.
+I’ll give you a **final deployment plan** that answers both:
+
+1. How your **frontend/backend/worker** map into Docker containers (what runs on servers).
+2. How they’re exposed as **URLs** (what users see).
+# 🚀 Final Deployment Plan for MangoSEO
+
+## 🐳 Containers (Server-side)
+
+Think of each as a **service in Docker**:
+
+* **Container A → `frontend` (Next.js)**
+
+  * Runs your marketing pages + editor.
+  * Build → serves static/SSR pages.
+  * Connects to backend API at `https://api.mangoseo.com`.
+* **Container B → `backend` (FastAPI)**
+
+  * Core business logic & REST API.
+  * Talks to Supabase (DB/Auth) and Redis.
+  * Exposed at `https://api.mangoseo.com`.
+* **Container C → `ai-worker`**
+
+  * Background job processor (heavy LLM/image generation).
+  * Listens to jobs pushed into Redis (queue).
+  * Never exposed directly to users.
+* **Container D → `redis`**
+
+  * In-memory cache + task queue broker.
+  * Shared between backend + ai-worker.
+  * Private, not user-facing.
+## 🌍 What Users See (Domains)
+
+These are the **entry points** — your actual URLs:
+
+* **`https://mangoseo.com`** → marketing pages only (from Container A).
+* **`https://app.mangoseo.com`** → editor (from Container A, `/app/*` routes).
+* **`https://api.mangoseo.com`** → backend APIs (from Container B).
+* **(optional)** `worker.mangoseo.com` → internal admin/debugging, but usually AI Worker stays private.
+## 🧭 How It All Flows
+
+1. **User visits `mangoseo.com`** → served by **Container A (frontend)**.
+   → No heavy backend calls, just marketing content.
+2. **User logs in at `app.mangoseo.com`** → served by **Container A** again.
+   → But now frontend makes API calls to **Container B (backend)**.
+3. **Backend (Container B)** → validates user, creates task in **Redis (Container D)**.
+4. **AI Worker (Container C)** → picks up job from Redis, calls LLM/SEO APIs, stores result in Supabase.
+5. **Frontend polls `api.mangoseo.com/tasks/:id`** → gets results once AI Worker finishes.
+## 📦 Docker Compose Example
+
+Here’s how you’d run everything locally or on a single server:
+
+```yaml
+version: "3.9"
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=https://api.mangoseo.com
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=${DATABASE_URL}
+      - UPSTASH_REDIS_REST_URL=redis://redis:6379
+    depends_on:
+      - redis
+
+  ai-worker:
+    build: ./ai-worker
+    environment:
+      - UPSTASH_REDIS_REST_URL=redis://redis:6379
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+```
+## ✅ Benefits of This Setup
+
+* **Scalable:** Each container can scale independently.
+  (e.g., 5 `frontend`, 10 `backend`, 20 `ai-worker` under high load).
+* **Clean separation:** Users only see `marketing` + `app` + `api`.
+* **Future-proof:** Want separate repos for marketing vs editor later? Easy → split `frontend`.
+* **Cloud ready:** Same `docker-compose.yml` can be deployed to AWS ECS, GCP Cloud Run, or Kubernetes.
+ 
+
+
+
+
+
+
+
+
+
+
+ Should we build a chained process
+
+✅ Absolutely. Since your goal is to generae fully SEO-optimized blogs automatically, a pipeline approach is ideal.
+Chained Pipeline Example for Blog Generation
+Step 1: User Input / Idea Generatio
+User submits topic + desired word count
+Step 2: SEO Analysis
+Scrape competitors, extract keywords, suggest structure
+Step 3: Blog Outline
+AI generates a structured outline
+Step 4: Blog Draft
+AI writes full draft based on outline
+Step 5: Optimization
+SEO tweaks, meta tags, readability check
+Step 6: Final Post
+
+Save to DB + optionally schedule for posting to CMS / WordPress / Webflow.
+Key: Each step can be a separate service or function, but orchestrated by a central pipeline/orchestrator.
+3️⃣ Core Features of MangoSEO
+
+ 
+Automated SEO Blog Generation
+
+Input: Topic, word count, style.
+Output: SEO-optimized blog.
+Automatic scheduling to post on user’s CMS (WordPress/Webflow).
+Pipeline: Idea → Outline → Draft → Optimize → Schedule → Publish. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+Key:
+Backend does not wait for the AI Worker to finish (unless you block, which is discouraged).
+The AI Worker picks up tasks asynchronously, generates results, and writes them back to DB/queue.
+Frontend polls backend to see job status or fetch results.
+2️⃣ What to Develop First for Core Functionality
+Since your main features revolve around:
+SEO-optimized blog generation
+You can prioritize backend MVP first.
+
+
+
+
+
+
+
+
+
+
+ 
+
+## The Exact AI Pipeline for Automated SEO Blog Generation
+
+This pipeline will be executed by your **AI Worker** microservice. Each step is an "Agent" or a service call.
+
+### 🟢 **Phase 0: Trigger & Onboarding (Main Backend)**
+*   **Input:** User provides a `topic`, `target_keyword`, and their `website_url`.
+*   **Action:** Main Backend creates `Article` and `Task` records in the database with status `pending` and calls the AI Worker.
+*   **Output:** A `task_id` is returned to the frontend for progress polling.
+
+### 🔵 **Phase 1: Research & Strategy (AI Worker)**
+**Goal:** Understand the landscape and build a data-driven blueprint.
+1.  **Competitor Analysis Agent:** Uses SERPAPI to scrape the top 10 Google results for the `target_keyword`.
+2.  **Content Blueprint Agent:** Analyzes the competitors to generate a blueprint.
+    *   **Outputs:** Optimal word count, recommended H2/H3 structure, semantic keywords (LSI), sentiment analysis, questions to answer (from "People Also Ask").
+3.  **Site Analysis Agent:** (Optional) Crawls the user's `website_url` to understand existing content and internal linking opportunities.
+
+### 🟡 **Phase 2: Content Creation (AI Worker)**
+**Goal:** Generate a high-quality, long-form draft.
+4.  **Outline Generation Agent:** Uses the blueprint to create a detailed, logical outline for the article.
+5.  **Draft Writing Agent:** Expands the outline into a full ~3000-word draft. This likely involves a chain of prompts for each section.
+6.  **Fact-Checking & Citation Agent:**
+    *   **Anti-Hallucination:** Uses a model like Claude to verify claims in the draft against the initial research data.
+    *   **Source Citation:** Inserts relevant links to authoritative sources.
+7.  **Media Agent:**
+    *   **Image Suggestion:** Uses a multi-modal model to generate a prompt for an image, then either uses a service like NanoBanana or recommends a Google Image search term.
+    *   **Video Suggestion:** Researches and suggests a relevant YouTube video to embed.
+
+### 🟠 **Phase 3: SEO Optimization & Enrichment (AI Worker)**
+**Goal:** Transform the draft into an SEO powerhouse.
+8.  **Optimization Agent:**
+    *   Inserts the `target_keyword` and semantic keywords naturally.
+    *   Writes a compelling meta title and description.
+9.  **Internal Linking Agent:** Analyzes the user's site (from Phase 1) and suggests internal links from the new article to existing relevant pages.
+10. **External Linking Agent:** Adds relevant outbound links to high-authority sources.
+11. **Grammar & Final Check Agent:** A final proofread for typos, readability, and tone.
+
+### 🔴 **Phase 4: Review & Scheduling (Main Backend -> CMS)**
+**Goal:** Hand the final article back to the user and automate publishing.
+12. **Callback to Main Backend:** AI Worker sends the finalized article package (content, meta tags, image suggestions, links) back to the Main Backend, which saves it to the `Article` record and updates the `Task` status to `success`.
+13. **User Review:** The article appears in the user's dashboard with a status of `Ready`. The user can review and edit it.
+14. **CMS Integration:** User connects their WordPress/Webflow/etc. account via the settings.
+15. **Scheduling & Publishing:**
+    *   User sets a publish date/time or clicks "Publish Now".
+    *   Main Backend uses the appropriate `integration_service` (e.g., `wordpress_service.py`) to authenticate and make a REST API call to the user's CMS to create the post.
+    *   Article status is updated to `Published`, and the `published_url` is saved.
+## Visual Pipeline Map
+
+```mermaid
+graph TD
+    A[User Input: Topic/Keyword] --> B[Main Backend: Create DB Record];
+    B -- triggers --> C[AI Worker: Research & Blueprint];
+    C --> D[AI Worker: Write Draft];
+    D --> E[AI Worker: Fact Check & Cite];
+    E --> F[AI Worker: Optimize & Add Media];
+    F -- callback --> G[Main Backend: Save Final Article];
+    G --> H{User Reviews in Dashboard};
+    H -- Approves --> I[Main Backend: Schedule via CMS API];
+    H -- Edits --> H;
+    I --> J[CMS: Article Published];
+``` 
+
+| Step                                  | Component / Service        | Description                                                                                                                                                   |
+| ------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Idea Generation**                | `topic-agent.py`           | Takes user input (topic, word count, style) and expands it with SEO insights. Calls **OpenAI/Gemini**.                                                        |
+| **2. SEO Blueprint / Analysis**       | `seo-analysis-agent.py`    | Scrapes top Google results for target keywords. Generates semantic keywords, headings, questions to answer, suggested content length. Uses **Claude/Gemini**. |
+| **3. Outline Creation**               | `outline-agent.py`         | Converts topic + SEO blueprint into structured outline (H1/H2/H3, sections). Lays foundation for drafting.                                                    |
+| **4. Draft Writing**                  | `writing-agent.py`         | Generates full draft content from outline. Uses **OpenAI/Mistral/Gemini**.                                                                                    |
+| **5. Fact Checking & Optimization**   | `fact-check-agent.py`      | Validates claims, sources citations, fixes hallucinations, typos, grammar, SEO optimization. Uses **Claude / Gemini**.                                        |
+| **6. Media & Rich Content Insertion** | `media-agent.py`           | Inserts images (nano banana), YouTube embeds, tables, lists. Handles asset storage (Cloudinary).                                                              |
+| **7. Internal & External Linking**    | `linking-agent.py`         | Adds internal links to user’s website and external links where appropriate.                                                                                   |
+| **8. Review / Approval (Optional)**   | Frontend                   | User can approve or request changes to the article before scheduling.                                                                                         |
+| **9. Scheduling & Publishing**        | `cms-integration-agent.py` | Pushes approved content to connected CMS (WordPress, Webflow, Ghost, etc.) based on schedule.                                                                 |
+
+
+Backend
+Receives user requests: /generate-blog
+Saves job to queue (Redis / Celery)
+Provides task ID to frontend for progress tracking
+AI Worker
+Picks jobs from the queue
+Runs pipeline steps 1→9 sequentially
+Returns final article + metadata
+Backend updates database / notifies frontend
+Both share data via Redis/Queue and Supabase/Postgres for job persistence and results.
+
+
+
+
+
+
+
+
+
+
+
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant Backend (FastAPI)
+    participant Queue (Redis)
+    participant AI Worker
+    participant Database (Supabase)
+
+    User->>Frontend: Submit Blog Form
+    Frontend->>Backend: POST /generate-blog {topic, keyword}
+    
+    Backend->>Database: Create Article+Task (status: pending)
+    Backend->>Queue: Enqueue task_id + data
+    Backend-->>Frontend: 202 Accepted {task_id}
+    
+    Frontend->>Frontend: Poll GET /task/{task_id}
+    
+    loop Polling
+        Frontend->>Backend: GET /task/{task_id}
+        Backend->>Database: Get Task status
+        Backend-->>Frontend: {status: processing}
+    end
+
+    AI Worker->>Queue: Dequeue next job
+    AI Worker->>AI Worker: Run Pipeline (Steps 1-9)
+    AI Worker->>Database: Update Article (content, meta, status: ready)
+    AI Worker->>Database: Update Task (status: success)
+    
+    Frontend->>Backend: GET /task/{task_id} (next poll)
+    Backend->>Database: Get Task status
+    Backend-->>Frontend: {status: success, article_id: 123}
+    
+    User->>Frontend: Clicks "Publish"
+    Frontend->>Backend: POST /publish {article_id}
+    Backend->>Database: Get Article
+    Backend->>CMS: API Call (WordPress/Webflow)
+    Backend->>Database: Update Article (status: published, published_url)
+    Backend-->>Frontend: 200 OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+## 📦 What We Should Store in MangoSEO
+
+### 🔹 Users & Auth
+
+* `user_id` (UUID, Supabase Auth)
+* `email` (unique, login)
+* `plan` (free/pro/enterprise)
+* `usage_stats` (articles\_count, audits\_count, keywords\_researched)
+* `cms_connections` (encrypted API creds: WordPress, Webflow, etc.)
+👉 **Stored in Supabase**. Synced with LemonSqueezy webhooks for billing.
+
+
+
+### 🔹 Articles
+
+* `article_id` (UUID)
+* `user_id` (FK)
+* `title`
+* `slug`
+* `content` (markdown/HTML)
+* `seo_metadata` (meta title, description, keywords)
+* `status` (draft, scheduled, published)
+* `scheduled_publish_time` (nullable)
+* `cms_publish_status` (boolean or enum)
+👉 **Supabase = source of truth**.
+👉 Hot reads → cache in Redis for dashboard speed.
+
+
+
+### 🔹 SEO Blueprints (Keyword Research & Planning)
+
+* `blueprint_id` (UUID)
+* `user_id`
+* `primary_keyword`
+* `competitor_urls` (JSONB)
+* `outline` (JSON: H1, H2, word counts, etc.)
+* `language`
+👉 **Supabase** for persistence.
+👉 **Redis** for caching SERP results (avoid re-fetching SerpAPI).
+ 
+
+### 🔹 SEO Audits
+* `audit_id`
+* `user_id`
+* `target_url`
+* `results` (JSON: score, issues, recommendations)
+* `created_at`
+👉 **Supabase** for history.
+👉 **Redis** cache repeat audit results for same URL.
+
+### 🔹 Billing & Subscription
+* `subscription_id` (LemonSqueezy)
+* `plan_id`
+* `status` (trial, active, canceled)
+* `renewal_date`
+👉 Written by **webhooks → Supabase**.
+
+### 🔹 Integrations
+* `wordpress_credentials` (encrypted)
+* `webflow_credentials` (encrypted)
+* `custom_cms_credentials` (encrypted)
+👉 Stored securely in Supabase.
+👉 ❌ No media → Cloudinary only if later needed for article images.
+
+### 🔹 AI Worker Tasks
+* `task_id` (UUID)
+* `user_id`
+* `pipeline_state` (draft outline, progress, % complete)
+* `partial_results`
+👉 **Redis only, short TTL**.
+👉 Final results → written to **Supabase**.
+ 
+
+| Data Type                              | Storage           |
+| -------------------------------------- | ----------------- |
+| Users, auth, subscription tier         | Supabase          |
+| Usage stats                            | Supabase          |
+| Articles (content, SEO metadata)       | Supabase          |
+| SEO blueprints (keywords, competitors) | Supabase          |
+| SEO audit results                      | Supabase          |
+| Billing & subscription                 | Supabase          |
+| CMS integrations (encrypted)           | Supabase          |
+| Media assets (if ever used)            | Cloudinary        |
+| AI worker state & cached SERPs/audits  | Redis (ephemeral) |
+ 
+
+
+###########################################
+Landing page - 
+Based on the website content provided, here are the sections that can be identified:
+Hero Section:
+Introduces SEObot as a fully autonomous SEO Robot with AI agents.
+Highlights key statistics, such as 100k+ articles created, 0.6 billion impressions, and 15 million clicks.
+What is SEObot Section:
+Describes SEObot's purpose and benefits, such as saving time and effort for busy founders.
+Integration Section:
+Lists popular CMS platforms and integrations supported by SEObot, including Unicorn Platform, Webflow, Ghost, WordPress, and more.
+Supported Languages Section:
+Lists the 50 languages supported by SEObot, including Arabic, English, Spanish, French, and many others.
+Articles Examples Section:
+Showcases various article types, such as Listicles, How-to Guides, Checklists, QA Articles, Versus Articles, and Roundups.
+Wall of Love Section:
+Features testimonials or success stories from thousands of users who have used SEObot to bring traffic to their blogs.
+Pricing Section:
+Describes the pricing plan, starting at $19/month, and highlights the benefits of using SEObot, including fully automated onboarding and content creation.
+FAQ Section:
+Answers frequently asked questions about SEObot, such as its ability to create individual blog pages, support for languages other than English, and article moderation.
+Call-to-Action (CTA) Section:
+Encourages users to try SEObot and provides a link to onboard their website.
+The homepage of SEObotAI ([https://seobotai.com/](https://seobotai.com/)) is structured with several distinct sections, each serving a specific purpose to inform visitors about the product and encourage engagement. Here's an overview of the main sections:
+### 1. **Hero Section**
+
+* **Purpose**: Introduces SEObotAI as a fully autonomous SEO tool powered by AI agents.
+* **Key Elements**:
+
+  * Tagline: "Fully autonomous 'SEO Robot' with AI agents for Busy Founders"
+  * Call-to-action (CTA): "Get more SEO traffic"
+  * Subscription starting at \$19/month
+  * Links to the app and pricing pages
+### 2. **Why Choose SEObot?**
+
+* **Purpose**: Highlights the benefits of using SEObotAI for busy founders.
+* **Key Elements**:
+
+  * Description of SEObot as an all-in-one AI agent that saves time and effort
+  * Testimonial from Santiago Poli, emphasizing the tool's effectiveness
+### 3. **Integration Section**
+
+* **Purpose**: Showcases SEObotAI's compatibility with various platforms.
+* **Key Elements**:
+
+  * Icons representing integrations with platforms like Unicorn Platform, Webflow, Ghost, WordPress, Framer, WIX, Shopify, Notion, HubSpot, Next.js, Webhooks, and REST API
+### 4. **Supported Languages**
+
+* **Purpose**: Demonstrates the multilingual capabilities of SEObotAI.
+* **Key Elements**:
+
+  * List of 50 supported languages, including Arabic, Basque, Bengali, Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Finnish, French, Galician, German, Gujarati, Hebrew, Hindi, Hungarian, Italian, Japanese, Korean, Latvian, Portuguese, Russian, Spanish, Swedish, Turkish, and Ukrainian
+### 5. **Articles Examples**
+
+* **Purpose**: Provides examples of articles generated by SEObotAI.
+* **Key Elements**:
+
+  * Links to various blog articles, such as:
+
+    * "SaaS SEO: 7 Must-Have Tools for Indie Makers"
+    * "10 Indie Maker Tips to Boost Product Visibility in 2024"
+    * "Robots.txt SEO Guide: 10 Best Practices"
+    * "Google Core Update Checklist: Prepare Your Site"
+    * "Next.js getServerSideProps: Usage, Examples, FAQs"
+    * "Subdomain vs. Subdirectory vs. ccTLD for SEO"
+    * "10 Proven Cinema Promotion Tactics for 2024"
+    * "Next.js 14 Project Structure: Best Practices"
+### 6. **Wall of Love**
+
+* **Purpose**: Showcases user testimonials and success stories.
+* **Key Elements**:
+
+  * Quotes from users who have benefited from using SEObotAI
+  * Emphasis on the tool's impact on driving traffic and improving SEO
+### 7. **Pricing Section**
+
+* **Purpose**: Provides information on SEObotAI's subscription plans.
+* **Key Elements**:
+
+  * Subscription starting at \$19/month
+  * Emphasis on the return on investment (ROI)
+  * Quote from John Rush about building SEObotAI for his own SaaS projects and directories
+Each of these sections is designed to inform visitors about SEObotAI's capabilities, showcase its effectiveness through testimonials and examples, and encourage potential users to engage with the product.
+
+If you need further details or assistance with specific sections, feel free to ask!
+###########################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+URL Onboarding Steps for SEOBot
+User Submission of Website URL
+The user enters their website’s URL (e.g., https://example.com) into the SEOBot’s onboarding form.
+The system stores this URL in a database linked to that specific user.
+Initial Website Crawl / Scraping
+The SEOBot accesses the submitted URL to gather information:
+Pages and structure (sitemap, internal links)
+Content (text, headings, images, metadata)
+Technical SEO signals (load time, mobile-friendliness, broken links)
+This can be done automatically in the background.
+Site Analysis and Audits
+The bot runs SEO audits based on:
+On-page SEO (titles, meta descriptions, H1/H2 tags)
+Off-page SEO signals (if linked pages are detected)
+Performance metrics (speed, Core Web Vitals)
+Generates initial SEO score or recommendations.
+
+
+
+
+
+
+
+
+
+
+
+
+Architecture Flow Clarification: OnPageSEO
+User Request → Analyzer (crawls + technical audit) → SEOAuditResult → Recommender (AI analysis) → Recommendations 
+Analyzer is NOT redundant - it's your:
+Website crawler
+Technical validator
+Data extractor
+Rule-based auditor
+🧠 Recommender DEPENDS on Analyzer - it needs:
+Clean HTML content from Analyzer
+Technical issue data from Analyzer
+Structured page data from Analyzer
+-------------------------
+Flow of data
+/seo/analyze endpoint receives a URL or HTML and an optional task_id.
+SEOAnalyzer.analyze() is called:
+Returns a SEOAuditResult object containing:
+issues, warnings, overall_score
+Possibly page_data (PageSEOData) if analyzer saves content
+SEORecommender.generate_recommendations(audit_result, task_id) is called:
+Uses audit_result.page_data to run AI agents.
+Converts agent outputs into AIRecommendation objects.
+Stores recommendations in Supabase and Redis.
+The endpoint returns a JSON combining:
+audit_result → issues, warnings, score
+recommendations → from AI agents (if any)
+Other metadata like audit_id, generated_at, etc.
+✅ So yes, SEOAuditResult comes from the analyzer and is passed to the recommender.
+Audit results always come from the analyzer.
+Recommendations come from recommender using AI agents.
+If task_id is provided, the recommender tries to update task status, cache results, and store recommendations in Supabase.
+Missing page_data or misconfigured DB causes AI recommendations to be empty even though the endpoint calls the recommender.
+
+
+
+
+
+
+
+
+Architecture Flow Clarification: OnPageSEO
+
+
+
+
+
+
+
+
+
+
+
+
+Backen and AI worker relation
+
+Looking carefully at both files (`orchestration_service.py` in backend and `generate.py` in the AI worker), here’s a precise breakdown of their roles and whether there’s redundancy:
+### **1. Backend: `orchestration_service.py` + `orchestrate.py`**
+* **Purpose:**
+
+  * Acts as the **main entry point for the web app** or client (Next.js frontend) to request content generation, SEO audits, CMS sync, etc.
+  * **Validates user authentication** (`get_current_user`) and **subscription** indirectly (you can add subscription check here).
+  * Validates language (`LANGUAGES_SUPPORTED`).
+  * Creates `tasks` in Supabase to track the workflow.
+  * Delegates actual AI-intensive work **asynchronously** to background tasks (or AI worker).
+  * Updates task status (`pending → processing → completed`) in Supabase.
+
+* **Key points:**
+
+  * Handles **user-level access control**.
+  * Orchestration ensures **all pipelines** (article, SEO, CMS) are run in the correct sequence.
+  * Does **not generate AI content directly**; it delegates that to the AI worker.
+### **2. AI Worker: `generate.py`**
+* **Purpose:**
+
+  * Microservice dedicated to **CPU/GPU-heavy AI tasks** (content generation, SEO audits, keyword research, content optimization).
+  * Runs long-running AI tasks asynchronously in background threads/tasks.
+  * Exposes its own API endpoints (`/article`, `/seo-audit`, `/keyword-research`, `/content-optimization`).
+  * **Does not handle user authentication fully**—it just verifies the `API key` from the backend.
+
+* **Key points:**
+
+  * Focused solely on **AI computation pipelines**.
+  * Designed to be **scalable independently** from the frontend/backend.
+  * Returns immediate `202 Accepted` responses; actual completion is tracked via Supabase tasks.
+### **3. Are they redundant?**
+* **No, not really.**
+* They **overlap conceptually**, but their responsibilities are distinct:
+
+| Layer                   | Responsibilities                                                                                                                    |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Backend / Orchestration | User authentication, subscription validation, task orchestration, API routing, background task scheduling                           |
+| AI Worker               | Heavy AI computation (article generation, SEO, keyword research, optimization), background execution, API for orchestration to call |
+
+* The backend **orchestrates the workflow** and enforces business rules, while the AI worker **executes the computationally expensive pipelines**.
+* You **do not want to merge them** because that would couple heavy AI tasks directly with your user-facing backend, hurting scalability and response times.
+### ✅ **Improvements / Considerations**
+1. **Subscription check in backend:**
+
+   * Currently, `orchestrate_pipeline` validates the user but **doesn’t check if they have enough credits/subscription** before starting article generation.
+   * This should happen before creating the task and adding background tasks.
+
+2. **Task tracking:**
+
+   * Both backend and AI worker update the Supabase task.
+   * Ensure no race conditions: ideally backend creates the task and AI worker only updates `status`/`progress`.
+
+3. **Error handling & retries:**
+
+   * The AI worker logs errors and updates tasks as `failed`.
+   * Backend could also implement **retry logic** or notify the user if task fails.
+
+4. **Redundancy check:**
+
+   * Both `orchestration_service.generate_article_pipeline` (backend) and `generate_article` (AI worker) **trigger the same pipeline**, but backend delegates to AI worker via `background_tasks`.
+   * This is expected and correct; not redundant.
+### **Conclusion**
+* **Not redundant**; this is a proper separation of concerns:
+
+  * Backend = **orchestration & user-level validation**
+  * AI Worker = **heavy AI execution**
+* The only missing piece: **subscription/credits check in backend before initiating generation**.
+If you want, I can **diagram the full workflow** showing **Frontend → Backend → AI Worker → Supabase**, highlighting exactly where auth, subscription, and task tracking happen. It will make the separation and non-redundancy crystal clear.
+Do you want me to do that?
+Backend (FastAPI) - The Orchestrator
+Primary Role: API Gateway + Business Logic + Task Management
+
+Key Responsibilities:
+HTTP API Endpoints: Handle all incoming requests from frontend
+User Authentication & Authorization: Manage user sessions and permissions
+Task Creation & Management: Create tasks in database for AI worker to process
+CMS Integration: Handle all CMS API communications
+Database Operations: CRUD operations for articles, users, settings
+Webhook Handling: Process incoming webhooks from CMS/payment providers
+Task Status Monitoring: Check task status and update frontend
+How it communicates with AI Worker:
+Writes tasks to database with status pending
+Reads task status updates from database
+Does NOT make direct HTTP calls to AI worker
+AI Worker - The Processing Engine
+Primary Role: Background Processing + AI Content Generation
+Key Responsibilities:
+Task Processing: Continuously polls database for pending tasks
+AI Content Generation: Executes the actual AI workflows (research, writing, etc.)
+Multi-Agent Orchestration: Coordinates different AI agents
+External API Calls: Makes calls to search engines, image APIs, etc.
+Task Status Updates: Updates task status in database (processing → completed/failed)
+How it communicates with Backend:
+Polls database for new tasks with status pending
+Updates task status in database (no direct communication with backend)
+Writes results back to database
+
+Workflow Example: Article Generation
+Frontend → Backend: User clicks "Generate Article"
+Backend: Creates task in database with status pending
+AI Worker: Polls database, finds pending task, updates status to processing
+AI Worker: Executes multi-agent pipeline (research → outline → writing → enhancement)
+AI Worker: Updates task status to completed with results in result field
+Backend: Sees task completion, updates article status, notifies frontend
+Frontend: Displays completed article to user
+
+Benefits of This Architecture
+Decoupling: Backend and AI worker are completely independent
+Scalability: Multiple AI workers can process tasks in parallel
+Resilience: If AI worker crashes, tasks remain in database for recovery
+Simplicity: No need for complex service discovery or HTTP communication
+Monitoring: Easy to see pending/processing tasks in database
+Deployment Considerations
+Backend: Deployed as web server (handles HTTP requests)
+AI Worker: Deployed as background worker process(es)
+Database: Shared between both services
+Redis: Optional for caching and pub/sub if needed later
+
+Excellent question. This is a crucial architectural distinction, and the answer is: **No, it is not redundant. The backend integrations and the AI worker have completely separate and complementary responsibilities.**
+
+Think of it like a restaurant:
+
+*   **The AI Worker** is the **Master Chef**. Its only job is to take raw ingredients (a topic, keywords) and craft a perfect, high-quality dish (a well-researched, well-written article). It's a specialist in creation.
+*   **The Backend (with its Integrations)** is the **Restaurant Manager, Wait Staff, and Expediter**. They don't cook the food. They:
+    1.  **Take the order** from the customer (the user in the frontend).
+    2.  **Deliver the order** to the chef (orchestrate the call to the AI Worker).
+    3.  **Receive the finished dish** from the chef.
+    4.  **Plate it, add garnishes** (format it for the specific CMS).
+    5.  **Deliver it to the correct table** (publish it to WordPress/Webflow/Shopify via the integration).
+    6.  **Handle the bill and logistics** (update the database, manage user quotas, schedule future posts, handle webhooks from the CMS).
+
+Here’s a detailed breakdown of their roles:
+
+---
+
+### The AI Worker's Job (The Specialist Chef)
+
+*   **Single Responsibility:** Generate high-quality content.
+*   **Input:** A task definition (e.g., "write a blog post about X", "audit this outline", "generate an image prompt for Y").
+*   **Process:** Orchestrates complex, multi-step **AI agent workflows** (research -> outline -> write -> fact-check -> generate media).
+*   **Output:** A structured JSON object containing the final article content, metadata, images, citations, etc.
+*   **It does NOT:**
+    *   Know anything about users or authentication.
+    *   Talk to databases.
+    *   Know how to connect to WordPress or Webflow.
+    *   Handle billing or rate-limiting.
+    *   Manage webhooks.
+
+### The Backend's Job (The Manager & Logistics Expert)
+
+*   **Orchestration:** It receives the user's request, validates it, and decides *what task* to send to the AI Worker. It manages the entire lifecycle of that task.
+*   **Business Logic:** Handles user authentication, subscription checks, usage quotas, payment status (via LemonSqueezy), and permissions.
+*   **Data Persistence:** Saves the generated article, its status, and all metadata to the database (Supabase).
+*   **Integration Hub:** This is the most critical part. The backend:
+    *   **Stores CMS API Keys** securely for each user.
+    *   **Maps Data Formats:** Transforms the generic article JSON from the AI Worker into the very specific API format required by WordPress, Webflow, Shopify, etc.
+    *   **Handles Authentication:** Manages OAuth flows or API key-based auth for each platform.
+    *   **Publishes/Syncs:** Makes the actual HTTP calls to the external CMS APIs to create, update, or delete posts.
+    *   **Webhook Handling:** Listens for events *from* the CMS (e.g., "post was deleted on Webflow") and updates its own database to stay in sync.
+
+---
+
+### Concrete Workflow Example: "Publish to Webflow"
+
+1.  **User in Frontend:** Clicks "Generate & Publish," selects their connected Webflow site.
+2.  **Backend (FastAPI) `orchestration_service.py`:**
+    *   Checks the user's subscription is active.
+    *   Creates a `task` record in the database with status `pending`.
+    *   Calls **`POST /ai-worker/generate`** with the instruction "Write a blog post about X".
+    *   Waits for the AI Worker to finish.
+3.  **AI Worker:**
+    *   Runs its multi-agent pipeline (research -> outline -> write...).
+    *   Returns the perfect article JSON to the backend.
+4.  **Backend (FastAPI) `orchestration_service.py` continues:**
+    *   Saves the article JSON to the database, linked to the task.
+    *   **Now it uses its integrations:** It calls **`integration_service.py`**.
+5.  **Backend `integration_service.py`:**
+    *   Fetches the user's stored Webflow API key.
+    *   Calls **`integrations/cms/webflow.py`**.
+6.  **Backend `webflow.py`:**
+    *   Takes the generic article JSON.
+    *   Formats it into the exact structure the Webflow Create Post API expects.
+    *   Handles image uploads to Webflow's CDN if necessary.
+    *   Makes the authenticated API call to Webflow.
+    *   Returns the result (success/failure) back up the chain.
+7.  **Backend:**
+    *   Updates the task and article status in the database to `published` and stores the URL from Webflow.
+    *   Sends a response back to the frontend: "Success! Article published at [URL]".
+ 
+
+*   **Separation of Concerns:** The AI Worker is free to be optimized purely for content quality and speed. The backend handles all the "business" and "integration" complexity.
+*   **Resilience:** If the AI Worker goes down, your backend and CMS integrations are still functional for managing existing content. If WordPress changes its API, you only need to update `wordpress.py` without touching any AI code.
+*   **Scalability:** You can scale the AI Worker independently of the main backend API based on demand for content generation.
+
+Your current structure, as outlined in the codebox, is **correct and not redundant**. The `backend/integrations/` folder is the bridge between your internal data (from the AI Worker) and the outside world (all those CMS platforms). The AI Worker is your internal content factory.
+
+
+
+
+
+
+
+
+Frontend and Backend relation
+
+Frontend Communication Architecture
+The frontend should communicate exclusively with the Backend (FastAPI service), not directly with the AI Worker. Here's the complete communication flow:
+Communication Pattern: Frontend → Backend → Database ↔ AI Worker
+text
+Frontend (Next.js) ←HTTP/REST→ Backend (FastAPI) ↔ Database ↔ AI Worker
+Why This Architecture?
+Security: AI Worker doesn't expose HTTP endpoints to the internet
+Separation of Concerns: Backend handles business logic, AI Worker focuses on processing
+Single API Gateway: Frontend only needs to know one API endpoint
+Error Handling: Backend can gracefully handle AI Worker failures
+Rate Limiting & Auth: Backend handles all authentication and rate limiting
+
+Task Status Flow
+Frontend → POST /api/v1/articles/generate → Backend
+Backend → Creates task in DB → Database
+AI Worker → Polls DB for pending tasks → Database
+AI Worker → Processes task → Updates DB → Database
+Frontend → Polls GET /api/v1/tasks/{id} → Backend
+Backend → Checks DB → Returns status → Frontend
+This architecture ensures:
+✅ Frontend only talks to Backend via HTTP
+✅ Backend and AI Worker communicate through Database
+✅ Clean separation of concerns
+✅ Scalable and secure
+✅ Easy to monitor and debug
+
+Of course. This is an excellent and fundamental question about modern application architecture. The answer is a definitive **yes, you absolutely still need the FastAPI backend**.
+
+The AI worker and the FastAPI backend are not redundant; they have **completely separate and complementary responsibilities**. They are two specialized parts of a larger system.
+
+Think of it like a restaurant:
+
+*   **The AI Worker** is the **Master Chef** in the kitchen. Its only job is to take an order (a task) and craft a perfect, high-quality dish (a well-researched, well-written article). It's a specialist in creation.
+*   **The FastAPI Backend** is the **Restaurant Manager, Wait Staff, and Expediter**. They don't cook the food. They:
+    1.  **Take the order** from the customer (the user in the frontend).
+    2.  **Manage the customer relationship** (Authentication, Authorization, Subscription checks).
+    3.  **Deliver the order** to the chef (orchestrates the call to the AI Worker or, more commonly, creates a task for it).
+    4.  **Check that the customer can pay** (Billing/Subscription logic).
+    5.  **Receive the finished dish** from the chef.
+    6.  **Plate it, add garnishes** (format the data for the specific CMS or frontend).
+    7.  **Deliver it to the correct table** (send the final response back to the user).
+
+---
+
+### Why Your FastAPI Backend is Indispensable
+
+The `auth.py` file you posted is a perfect example of something the AI Worker should **never** handle. Here’s a breakdown of their distinct roles:
+
+#### 1. FastAPI Backend: The Public-Facing "Brain" and "Gatekeeper"
+
+*   **User Authentication & Session Management (`auth.py`):** This is its core job. It handles signup, login, JWT token creation, and password hashing. The AI worker has no business doing this.
+*   **User Authorization & Permissions:** It checks if a logged-in user is allowed to perform an action (e.g., "Does this user's subscription plan allow them to generate 10 articles?").
+*   **Business Logic & Validation:** It validates all incoming data from the frontend (e.g., "Is this a valid email?", "Is the requested blog topic appropriate?").
+*   **Subscription & Billing Integration:** It communicates with payment providers (like Lemon Squeezy) to check if a user's subscription is active. This is critical and must happen *before* a costly AI task is started.
+*   **Orchestration:** It receives a request, validates it, checks permissions, and then decides *how* to fulfill it. Often, this means creating a task in the database for the AI Worker to pick up.
+*   **Database Management (CRUD):** It creates, reads, updates, and deletes all user-related data (articles, settings, profiles, tasks) in Supabase.
+*   **Clean API for Frontend:** It provides a simple, consistent, and secure REST/GraphQL API for your Next.js frontend to communicate with. The frontend should **never** talk directly to the AI Worker.
+
+#### 2. AI Worker: The Specialized "Muscle"
+
+*   **Single Responsibility:** Execute long-running, computationally expensive **AI tasks**.
+*   **Input:** A well-defined task from the queue (e.g., "generate an article with this title for user_id X").
+*   **Process:** It runs complex, multi-step AI agent workflows (research -> outline -> write -> fact-check -> generate media). This can take minutes.
+*   **Output:** A structured JSON object containing the final result (article content, metadata, etc.).
+*   **It does NOT:**
+    *   Handle HTTP sessions or cookies.
+    *   Know about users or passwords.
+    *   Perform subscription checks.
+    *   Talk to payment processors.
+    *   Expose a public API. It's an internal service.
+
+### How They Work Together: A Concrete Example
+
+Let's trace the path of a user clicking "Generate Article":
+
+1.  **Frontend (Next.js) → Backend (FastAPI):**
+    *   HTTP `POST /generate-article` (includes the user's JWT token from `auth.py`)
+
+2.  **Backend (FastAPI) handles the request:**
+    *   **Auth:** Validates the JWT token. Who is this user?
+    *   **Authorization:** Checks the user's quota in the database. Do they have credits left?
+    *   **Subscription Check:** (Optional but crucial) Calls Lemon Squeezy to confirm their subscription is active.
+    *   **Validation:** Validates the article topic.
+    *   **Orchestration:** Creates a new `task` record in the Supabase `tasks` table with status `'pending'`.
+
+3.  **AI Worker (Separate Process):**
+    *   Constantly polls the Supabase `tasks` table for new tasks with status `'pending'`.
+    *   Finds the new task, updates its status to `'processing'`.
+    *   **DOES THE HEAVY LIFTING:** Runs its AI pipeline (research, writing, etc.).
+    *   Upon completion, saves the result to the `articles` table and updates the task status to `'completed'`.
+
+4.  **Frontend (Next.js) → Backend (FastAPI):**
+    *   Polls `GET /task-status/{task_id}` to check if the AI is done.
+
+5.  **Backend (FastAPI):**
+    *   Checks the `tasks` table and returns the status to the frontend.
+
+6.  **Frontend (Next.js):**
+    *   Sees the task is `'completed'`, then calls `GET /articles/{id}` to fetch and display the generated article.
+
+### Conclusion
+
+Your architecture is correct. The **FastAPI backend** is your application's **control plane**, handling all user interaction, security, and business logic. The **AI Worker** is your **data plane**, dedicated to number-crunching and AI model inference.
+
+Removing the FastAPI backend would be like removing the restaurant's manager and waitstaff, forcing the customers to walk directly into the hot, noisy kitchen to shout their orders at the chef. It would be insecure, messy, and wouldn't scale. The backend is essential for managing the complex workflow outside of the core AI task itself.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+After onboarding 
+Great follow-up 👌 — let’s walk through **what happens *after* onboarding** in MangoSEO.
+# 🔹 After Onboarding: Full Lifecycle
+Once a website is onboarded (URL saved in DB + initial task created), a series of **pipelines** kick in to prepare everything for blog generation and SEO automation.
+## **1. Website Scraping & Analysis (AI-worker job)**
+* AI-worker picks up the `scrape_and_audit` task from DB.
+* **Scrapes the website**:
+
+  * Homepage + key subpages (about, blog, services).
+  * Collects text, meta tags, headings, internal links.
+* Runs **SEO audit** (via `seo_audit_pipeline.py`):
+
+  * Checks title/description length.
+  * Counts headings and word density.
+  * Finds missing image `alt`s.
+  * Calculates overall readability.
+* Stores results in DB:
+
+  * `audit_results` table OR `websites.metadata` JSONB field.
+
+✅ Output: "Audit Report" for that domain.
+## **2. Keyword Research**
+* AI-worker → `keyword_service` + external API (SerpAPI / Google Trends).
+* Finds:
+
+  * High-volume target keywords.
+  * Long-tail opportunities.
+  * Competitor keyword overlaps.
+* Stored in `keywords` table:
+
+  * `keyword`, `volume`, `difficulty`, `intent`.
+
+✅ Output: Keyword database for that site.
+## **3. Content Blueprinting**
+* AI-worker runs **outline/blueprint agent**:
+
+  * Picks 3-5 article topics.
+  * Drafts blog outlines (`h2`, `h3` hierarchy).
+  * Suggests word count & media ideas.
+* Stored in `blueprints` table.
+
+✅ Output: Content calendar / queue of possible articles.
+## **4. Article Generation**
+* User (in frontend editor) **chooses a topic** from the blueprint list.
+* Backend creates a new `tasks` entry: `generate_article`.
+* AI-worker executes `blog_generation_pipeline.py`:
+
+  * Research agent pulls sources.
+  * Outline agent finalizes structure.
+  * Writing agent generates draft.
+  * Fact-check agent fixes hallucinations.
+  * Quality agent polishes grammar/SEO.
+* Article stored in `articles` table with `status = draft`.
+
+✅ Output: Ready-to-review draft.
+## **5. Manual Editing (Frontend Only)**
+* User opens the **editor**:
+
+  * Makes final tweaks manually.
+  * Can add/remove sections.
+* ✅ Manual edits **do not consume credits** (per your rule).
+## **6. Publishing & Scheduling**
+* Once satisfied:
+
+  * User clicks **Publish**.
+  * Backend pushes article → CMS (WordPress, Webflow, Shopify, etc.) via integration service.
+  * `cms_publishing_service` updates DB with:
+
+    * `published_url`
+    * `publish_status`
+
+✅ Output: Article goes live on user’s site.
+## **7. Post-Publishing SEO Monitoring**
+* Background cron (`monthly-relinking.py`):
+
+  * Re-analyzes site structure.
+  * Suggests internal links to new articles.
+  * Refreshes audit results.
+* Tracks ranking performance & keyword movement (if SerpAPI/Google Search Console connected).
+
+✅ Output: Continuous SEO improvement loop.
+# ⚡ TL;DR
+After onboarding:
+
+1. Scrape & audit website.
+2. Keyword research.
+3. Generate blueprints (content ideas).
+4. Write articles (via AI-worker).
+5. Manual editing by user.
+6. Publish to CMS.
+7. Monitor SEO long-term. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TOPIC IDEA GENERATION
+🔹 Where scraping results add value
+
+Scraping results become super useful when you want to:
+
+Generate blog topic ideas automatically
+
+Example: If a company’s website has a page on “AI SEO tools”, you can scrape titles/meta/headers and propose blog topics like:
+
+“10 Benefits of AI SEO Tools for Small Businesses”
+
+“How AI SEO is Changing Content Marketing”
+
+This removes the burden from the user.
+
+Generate SEO-friendly headlines & meta descriptions
+
+Use scraped keywords, headings, and descriptions to align new blogs with the site’s existing content.
+
+Avoid duplication
+
+By knowing what’s already on the site, you can prevent generating a blog that repeats the existing pages.
+
+Personalization
+
+If the user enters their website, you can generate blog topics relevant to their business niche (instead of generic ideas).
+
+🔹 Flow with scraping + user approval
+
+Here’s a nice hybrid design:
+
+User submits URL (their site or a competitor site).
+
+Backend scrapes metadata (title, meta description, H1/H2).
+
+AI Worker proposes blog ideas using scraped context.
+
+e.g., “Based on your site, here are 5 blog ideas…”
+
+Show ideas to user → they approve or schedule.
+
+Only then → run the Blog Generation Pipeline to produce full posts.
+
+This keeps user in control, reduces wasted generation, and allows future scheduling.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESTAPI and Nextjs integrations
+🔹 What REST API Integration Actually Means
+The user’s custom blog site must expose a REST API (for example, /api/posts where you can POST { title, content }).
+They also need to give you:
+The API base URL (their blog’s API endpoint).
+The auth credentials (API key, token, or username/password).
+Then, yes ✅ MangoSEO can send content directly to their custom site automatically.
+🔹 What REST API Integration Does Not Mean
+It does not mean you can just publish to any blog URL without an API.
+If a site only has a frontend (HTML pages, no backend API), MangoSEO can’t push posts there automatically.
+In that case, you’d need an alternative method (pixel/head script like OTTO, or webhooks, or manual copy-paste).
+🔹 Example Flow (Custom REST API Blog)
+User signs up → selects “REST API integration.”
+In MangoSEO dashboard → they paste:
+Base URL: https://myblog.com/api/posts
+API Key: xyz-123
+MangoSEO stores this in Supabase.
+When a post is ready, PublishCMSService → calls POST https://myblog.com/api/posts with { title, content, meta }.
+Blog publishes automatically 🎉.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TOPIC REJECTION
+**Yes, your current backend logic means you cannot generate more topics for a website/task until all existing topics are "rejected" or deleted.**
+
+### **Why?**
+- In your endpoint (suggest_blog_topics.py), you have this check:
+  ```python
+  existing = await supabase_client.fetch_all(
+      "topics",
+      filters={"website_url": website_url}
+  )
+  if existing:
+      logger.info(f"Topics already exist for {website_url}, skipping AI generation")
+      await supabase_client.update_table(
+          "blog_tasks",
+          filters={"id": task_id},
+          updates={
+              "status": "completed",
+              "updated_at": datetime.utcnow().isoformat(),
+          }
+      )
+      return {"status": "success", "topics_generated": 0, "skipped_existing": True}
+  ```
+- If any topics exist for that website, the agent is **not called** and topic generation is skipped.
+
+---
+
+### **How is rejection handled?**
+- **Currently, there is no explicit "rejection" status or logic in your backend.**
+- The only way to allow new topic generation is to **delete existing topics** for that website/task from the `topics` table.
+- There is no code for marking topics as "rejected" or for the frontend to trigger a "regenerate" action.
+
+---
+
+### **Where should rejection be handled?**
+- **Backend:**  
+  You could add a `status` field to topics (e.g., `"rejected"`, `"accepted"`, `"suggested"`), and modify your query to only skip if there are `"suggested"` or `"accepted"` topics, not `"rejected"`.
+- **Frontend:**  
+  The frontend could provide a "Reject" or "Regenerate" button, which either deletes topics or updates their status to `"rejected"`, then calls the endpoint again to generate new topics.
+
+---
+
+### **How to improve?**
+- **Backend:**  
+  Change your fetch logic to only skip if there are topics with status `"suggested"` or `"accepted"`:
+  ```python
+  existing = await supabase_client.fetch_all(
+      "topics",
+      filters={"website_url": website_url, "status": "suggested"}
+  )
+  if existing:
+      # ...skip generation...
+  ```
+- **Frontend:**  
+  Add UI to allow users to reject topics, which updates their status or deletes them.
+
+---
+
+### **Summary Table**
+
+| Action                | Where handled? | Current logic? | Needed improvement? |
+|-----------------------|---------------|----------------|---------------------|
+| Topic generation      | Backend       | Skipped if any topics exist for website | Only skip if non-rejected topics exist |
+| Topic rejection       | Not handled   | No status or delete logic | Add status or delete logic in backend/frontend |
+
+---
+
+**In short:**  
+You cannot generate more topics until existing ones are removed or marked as rejected.  
+To support regeneration, add topic status handling and update your backend/frontend accordingly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DUPLICATE TASKID Tasks
+From what I see, the duplicate pending entries are **not because you generate a new `task_id` each time**—they all share the same `task_id`. They’re more likely caused by **multiple queued attempts for the same task**, probably due to retries, worker restarts, or the system trying different “tones” or prompts simultaneously. Essentially, each attempt is creating a new DB row or queue item even though it’s for the same overarching task.
+
+Keeping **many duplicates for a single `task_id` is not ideal** because:
+
+1. It clutters the database, making queries heavier.
+2. It’s confusing when trying to identify the final completed content.
+3. It wastes storage, especially if each entry stores intermediate metadata.
+
+**How I’d handle it:**
+
+* **Single canonical row per task\_id:** Only create a new DB entry for retries if the previous one failed, rather than queuing multiple pending duplicates.
+* **Retry mechanism:** Use a `retry_count` field or update the same row instead of creating a new one.
+* **Tone variations:** If you want multiple tones, consider storing them **as separate fields or sub-entries under the same task\_id**, not as separate rows.
+* **Cleanup:** Periodically prune or archive old pending duplicates older than a threshold (e.g., 24–48 hours) to keep the DB lean.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You do not need the user’s raw login email & password.
+Instead, most CMS platforms (WordPress, Ghost, Medium, Webflow, HubSpot, etc.) provide API keys, OAuth tokens, or service accounts that your backend can use.
+With that credential, your system can:
+GET /posts/{id} → fetch the current article
+update the content body (inject internal links, fix formatting, etc.)
+PUT /posts/{id} → save changes
+To the CMS, it’s just a normal edit operation on an already published article.
+So whether you are:
+regenerating the entire blog post, or
+surgically editing one section to insert links
+…the permission requirement is the same: you need a valid CMS credential from the user.
+✅ But you don’t need to unpublish/re-publish — you just “edit live content” through their CMS API.
+Dynamic relinking means you don’t physically edit or republish the article each time you add/update links. Instead, you store link relationships in your database (e.g., article_internal_links table) and then inject those links at render time when a reader requests the article.
+So the article stays untouched in the CMS, but the user (and search engines) always see the latest set of cross-links when the content is delivered.
+Think of it like:
+Blog content = static text in database
+Links = an extra “layer” added on top dynamically before serving
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Supabase Tables
+Recommended Creation Order
+Users / WebsiteConfig / CMSCredentials
+users → website_configs → cms_credentials
+Reason: Other tables reference website_id or user_id.
+SEO Tasks / Audits
+seo_tasks → seo_audit_results → page_seo_data
+Reason: Audit results depend on tasks; page SEO data is embedded inside audits.
+Content / Tags / Metrics
+meta_tags, image_tags, link_tags, schema_markup, headings, content_metrics
+Reason: These are mostly used inside page_seo_data.
+AI Recommendations / Keyword Analysis
+ai_recommendations → keyword_analysis
+Reason: These depend on a task or page URL.
+Deployments / Monitoring
+deployment_plans → deployment_results → monitoring_data
+Reason: These reference audit IDs and URLs.
+Batch Processing / Agent Results
+batch_processing_results → agent_results
+Reason: These may reference tasks and audits.
+CMS Content / Orchestration / Publishing Status
+cms_content_updates → cms_content_responses → orchestration_requests → orchestration_responses → publishing_status
+Reason: These are higher-level workflow tables; may reference user or website configs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Batch onpageseo
+Of course. Let's walk through the complete flow for the batch analysis endpoint, tracing the journey from the initial HTTP request to the final saved response.
+
+### Complete Flow: Batch SEO Analysis
+
+Here is a step-by-step breakdown of the entire process, integrating the components from your codebase.
+
+```mermaid
+flowchart TD
+A[Client POSTs to<br>/analyze/batch] --> B[Endpoint validates<br>URLs & task_ids lists]
+B --> C[For each URL, create<br>analyze_single task]
+C --> D[asyncio.gather<br>runs all tasks concurrently]
+
+subgraph "Concurrent Processing for Each URL"
+    direction TB
+    F[analyze_single task for URL_n]
+    F --> G[SEOAnalyzer._fetch_url_content<br>Fetches HTML]
+    G --> H[SEOAnalyzer.analyze<br>Core Analysis Engine]
+    H --> I[SEORecommender.<br>generate_recommendations]
+    I --> J[Package result into<br>SEOAnalysisResponse]
+end
+
+D --> Concurrent
+
+subgraph "Post-Processing & Response"
+    direction LR
+    K[Aggregate all<br>individual results]
+    K --> L[Generate Summary<br>Calculate metrics, Build BatchAuditResponse]
+    L --> M[Return JSON response<br>results: list, summary: object]
+end
+
+Concurrent --> K
+```
+
+**1. Client Makes a Request**
+- A client (e.g., a frontend application) makes a `POST` request to the `/api/v1/seo/analyze/batch` endpoint.
+- The request body contains a JSON array of URLs: `{"urls": ["https://example.com", "https://example.org", ...]}`
+- Optional parameters: `task_ids` (a list of custom IDs to track each analysis) and `schedule_only=false`.
+
+**2. Endpoint Handler (`analyze_batch`)**
+- The FastAPI `analyze_batch` function receives the request.
+- It performs basic validation (e.g., ensuring the lists of `urls` and `task_ids` are the same length if both are provided).
+
+**3. Concurrent Task Creation**
+- The endpoint defines an **asynchronous helper function** called `analyze_single`. This function contains the entire workflow for analyzing *one* URL.
+- The core of the batch logic is this line:
+    ```python
+    results = await asyncio.gather(
+        *(
+            analyze_single(str(u), task_id=(task_ids[i] if task_ids else None))
+            for i, u in enumerate(urls)
+        ),
+        return_exceptions=False,
+    )
+    ```
+    - This code uses a list comprehension to create a list of *coroutine objects*—one for each URL. Each coroutine is the `analyze_single` function called with a specific URL and its corresponding task ID.
+    - `asyncio.gather(*coroutines)` is then called. This function takes all the coroutines and runs them **concurrently**. It waits until all of them are complete and returns their results in the same order as the input URLs.
+
+**4. Individual URL Analysis (`analyze_single` function)**
+*For each URL, the following steps happen inside its own `analyze_single` task:*
+
+**a. Fetch HTML:**
+   - The function creates an instance of `SEOAnalyzer`.
+   - It calls `analyzer._fetch_url_content(url)` which uses the `httpx` library to perform an HTTP GET request and fetch the raw HTML content of the page. This handles redirects, timeouts, and status codes (e.g., returning an error result for 403/429).
+
+**b. Core Analysis (`SEOAnalyzer.analyze`):**
+   - The function calls `analyzer.analyze(url, html_content, task_id)`.
+   - This method is the core engine. It likely:
+        1.  Parses the HTML (probably with `BeautifulSoup` or `lxml`).
+        2.  Extracts key on-page SEO elements (title, meta descriptions, headings, images, etc.).
+        3.  Runs a series of predefined checks/rules against these elements (e.g., "is title length between 30-60 characters?").
+        4.  Calculates an overall score based on the checks.
+        5.  **Determines if an AI Agent is needed.** This is a crucial step. The `analyze` method looks at the findings and sets the `ai_triggers` list in the `analysis_result`. For example:
+            - `ai_triggers = []` if no complex issues were found.
+            - `ai_triggers = ['content_quality']` if the content is thin or duplicate.
+            - `ai_triggers = ['title_optimization']` if the title tag is missing or poor.
+   - The `analysis_result` (a `SEOAuditResult` object) is returned, containing all the found issues, warnings, metrics, and the `ai_triggers` list.
+
+**c. AI-Powered Recommendations (`SEORecommender.generate_recommendations`):**
+   - The function creates an instance of `SEORecommender`.
+   - It calls `recommender.generate_recommendations(analysis_result, task_id)`.
+   - The recommender's job is to turn the structured data from the analyzer into helpful, contextual advice. Here's how it uses AI agents:
+        - It checks the `analysis_result.ai_triggers` list.
+        - **If the list is empty,** it might return a simple, pre-defined list of recommendations like "Great job!" or basic best practices, without calling any expensive AI model.
+        - **If the list contains triggers** (e.g., `['content_quality', 'title_optimization']`), it will formulate a prompt for an LLM (like OpenAI's GPT-4).
+        - The prompt would include the structured data (`analysis_result`) and instructions like: "Based on this SEO data, provide specific, actionable recommendations to improve the content quality and title tag. Do not hallucinate; only suggest fixes for the issues found."
+        - The LLM processes the prompt and returns natural language recommendations.
+        - The recommender parses this response and structures it into the list of recommendations that is added to the final response.
+
+**d. Format Response:**
+   - The `analyze_single` function packages the results from the analyzer and recommender into a `SEOAnalysisResponse` model (for success) or a dictionary with an `error` key (for failures).
+   - This result is returned to the `asyncio.gather()` function.
+
+**5. Aggregation and Summary**
+- After all `analyze_single` tasks are complete, `asyncio.gather()` provides the `results` list.
+- The endpoint code then processes this list to generate a summary (`BatchAuditResponse`):
+    - It counts successful vs. failed results.
+    - It calculates the total number of issues and the average score across all analyses.
+    - It populates the summary object with this aggregated data.
+
+**6. Final Response and Saving**
+- **How is it saved?** In the code you provided, the final result is **not permanently saved to a database**. It is simply returned in the HTTP response body to the client that made the request.
+- The return statement is: `return {"status": "completed", "results": formatted, "summary": summary}`
+- The client (e.g., a web browser) receives this large JSON object and is responsible for handling it (e.g., displaying it, storing it locally, or sending it to another service).
+- **To truly save it,** you would need to add a step to persist the `results` and `summary` to a database. This would typically be done:
+    - **In a background task** to avoid blocking the response.
+    - **Writing to a PostgreSQL/MySQL table** or **a NoSQL database like MongoDB** designed for storing structured JSON results.
+    - The `batch_id` from the summary would be the key to retrieve this batch audit later.
+
+---
+
+### Summary of Key Interactions
+
+| Component | Role in Batch Flow |
+| :--- | :--- |
+| **`analyze.py` (Batch EP)** | The orchestrator. Manages the list of URLs, runs tasks concurrently with `asyncio.gather`, and aggregates the results. |
+| **`SEOAnalyzer.analyze()`** | The core engine. Performs technical and content checks on a single URL and flags which areas need AI advice (`ai_triggers`). |
+| **`SEORecommender.generate_recommendations()`** | The advisor. Called for each URL. Uses the `ai_triggers` list to decide whether to call an LLM API to generate complex recommendations or just return simple ones. |
+| **Client** | The initiator and recipient. Must handle the final JSON response and would likely be responsible for persisting it if needed. |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OnPageSEO
+## **1️⃣ Architecture Approach (Microservice-First)**
+You already have:
+```
+frontend -> backend -> AI Worker
+```
+We’ll add:
+
+```
+OnPageSEO Microservice
+```
+
+### **Architecture Overview**
+
+```
+Frontend (Next.js)
+     |
+     v
+Backend (FastAPI) <-> OnPageSEO Microservice (FastAPI)
+     |
+     v
+AI Worker (async tasks / NLP / ML)
+```
+
+* **Frontend:** User dashboard, SEO toggle, manual trigger.
+* **Backend:** Handles articles, users, authentication, triggers SEO microservice.
+* **OnPageSEO Microservice:** Independent, responsible for SEO analysis and recommendations.
+* **AI Worker:** Performs heavy AI/NLP tasks (optional, can be triggered by SEO microservice).
+
+✅ Pros:
+
+* Fully modular and scalable
+* Can update SEO service without touching backend
+* Easy to monitor logs, resource usage
+
+---
+
+## **2️⃣ Deployment Considerations**
+
+**Separate Microservice Deployment:**
+
+* **Each service runs on its own host/container**:
+
+  * Backend: `backend.example.com`
+  * AI Worker: `worker.example.com`
+  * SEO Microservice: `seo.example.com`
+  * Frontend: `www.example.com`
+
+**Potential Challenges & Solutions:**
+
+| Problem                          | Description                                              | Solution                                                                                              |
+| -------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Cross-Origin Requests (CORS)** | Frontend calls backend -> backend calls SEO microservice | Use proper CORS headers in all services, enable `backend` to communicate with `SEO microservice` host |
+| **Latency**                      | Extra network hop from backend -> SEO microservice       | Keep services in same VPC / local network (or same Kubernetes cluster)                                |
+| **Service Discovery**            | Backend needs SEO microservice URL                       | Use environment variables or service registry (K8s / Docker Compose)                                  |
+| **Authentication**               | Securing inter-service calls                             | Use API keys or JWT tokens for internal service-to-service authentication                             |
+| **Scaling**                      | Each microservice scales independently                   | Autoscaling / container orchestration (Docker/K8s)                                                    |
+
+> In production, it’s normal for services to communicate across hosts. The key is **secure, authenticated API calls** with **low-latency networking**.
+  
+
+OnPageSEO Features Required (Based on OTTO SEO)
+Here’s a final list of features your OnPageSEO microservice should support:
+Analysis (Rule-Based)
+Crawl & parse HTML
+Check <title>, <meta> length/duplication
+Verify H1/H2/H3 hierarchy
+Image alt text presence
+Keyword density (basic NLP)
+Structured data validation (schema.org)
+Internal/external link audit (basic validation only — crosslinking can be skipped here since you already do it in blogpost generation ✅)
+💡 Recommendations (AI + Rules)
+Keyword Agent → expand keywords/semantic suggestions
+Semantic Agent → rewrite titles, descriptions, headings (AI call per page)
+Schema Agent → generate JSON-LD schema markup (AI call per page)
+Rule-based improvements (missing alt tags, short titles, duplicate metas, etc.)
+⚡ Deployment
+Apply fixes automatically if user enables “auto-optimize” in frontend settings
+Inject/modify <title>, <meta>, <script type="application/ld+json">
+Push fixes back through Supabase → backend/frontend
+Rollback option for failed optimizations
+📊 Monitoring
+Store SEO audit scores in Supabase
+Track improvements over time (CTR, impressions, clicks via Google Search Console API)
+Dashboard: before/after comparison
+🔐 Integration
+Frontend → toggle for auto/manual SEO, show reports
+Backend → user settings, job triggers
+AI Worker → handle heavy AI NLP when needed
+
+
+🧠 Where AI Should Be Used (Minimize Costs)
+Most SEO checks can be rule-based (cheap, fast). Use AI only when rules aren’t enough.
+✅ Non-AI (rule-based, cheap):
+Title/meta length checks
+H1/H2/H3 presence
+Image alt checks
+Keyword density (NLP via spaCy/NLTK, no LLM needed)
+Internal/external link audit
+Schema.org validation
+🤖 AI Needed (minimal calls):
+Keyword Agent
+Expand user’s target keyword list → synonyms, semantically related terms.
+Call AI once per audit, not per page element.
+Semantic Agent
+Suggest rewritten titles/descriptions with natural flow.
+Limit to one AI call per page.
+Schema Agent
+Generate JSON-LD schema block (Article, FAQ, Product, etc.)
+Again one AI call per page, cached & reused.
+👉 This means max 3 AI calls per page (worst case). If a site has multiple pages, batch results and reuse across pages to reduce cost.
+🕹️ Agents Needed
+keyword_agent.py → keyword/semantic expansion (AI)
+semantic_agent.py → rewrite meta tags, headers (AI)
+schema_agent.py → auto-generate schema.org (AI)
+(Optional later) link_agent.py → suggest internal linking, can stay rules-based initially
+
+✔️ Analysis (Rule-Based)
+All covered via analyzer.py + utils/.
+Crawl/parse HTML → parsers.py
+Title/meta checks → validators.py
+H1/H2/H3 hierarchy → validators.py
+Alt text presence → validators.py
+Keyword density → analyzer + spaCy
+Schema.org validation → validators.py
+Link audit → validators.py
+✔️ Recommendations (AI + Rules)
+All covered via recommender.py + agents.
+Keyword expansion → keyword_agent.py
+Semantic rewrites → semantic_agent.py
+Schema JSON-LD → schema_agent.py
+Rule-based fixes → validators.py
+✔️ Deployment
+Covered via deployer.py + seo_deploy.py.
+Apply fixes automatically.
+Inject/update <title>, <meta>, <script>.
+Push fixes to Supabase/backend.
+Rollback option included.
+✔️ Monitoring
+Covered via monitor.py.
+Stores SEO audit scores.
+Tracks GSC metrics.
+Provides data for frontend dashboard.
+✔️ Integration
+Already baked into architecture:
+Frontend → consumes API endpoints.
+Backend → auth & Supabase storage.
+AI Worker → heavy AI tasks triggered via agents.
+
+
+
+
+
+  ## How Pixel Implementation Works
+  ### User Installation:
+- User pastes pixel into website's `<head>`
+- Pixel **does NOT trigger analysis**
+- Only injects fixes that API already has stored in DB
+- Pixel is "delivery only" - not analysis
+### SEO Analysis Flow:
+- User clicks "Analyse Page" in frontend:
+  1. Frontend → Backend → OnPageSEO microservice
+  2. OnPageSEO crawls target page (using `requests` + `BeautifulSoup`)
+  3. Agents (keyword/semantic/schema) + validators run
+  4. Results stored in Supabase (`seo_versions` table as draft)
+- Analysis is manual trigger (button in dashboard)
+- Auto re-scan can be added later as background task
+### SEO Deployment Flow:
+- After analysis, recommendations ready in Supabase
+- User clicks "Deploy Fixes" in dashboard
+- Backend marks optimized payload as `active=true`
+- Pixel fetches this payload and injects into live website
+### Rollback Flow:
+- User clicks rollback → backend flips `active` flag back to old version
+- Pixel auto-fetches that version on next page load
+## Automatic SEO Analysis (Optional)
+- Pixel could ping API with page URL to enqueue background job
+- Would run analysis automatically and store recommendations
+- **Warning:** Heavy - could flood API if site has many pages
+- Most SaaS tools keep analysis as manual dashboard trigger
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   Analyzer (rule-based)
+      │
+      ▼
+   SEOAuditResult (saved in Supabase)
+      │
+      ▼
+   Agents (parallel, each gets audit + page content)
+   ┌─────────────┬───────────────┬─────────────┐
+   ▼             ▼               ▼
+KeywordAgent   SemanticAgent   SchemaAgent
+   │             │               │
+   ▼             ▼               ▼
+ AgentResult    AgentResult     AgentResult
+      │            │               │
+      └────────────┴───────────────┘
+                ▼
+          SEORecommender
+                │
+                ▼
+        Final AIRecommendations
+                │
+                ▼
+          DeploymentPlan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Auth flow 
+# Frontend: Initiates Google OAuth (via Supabase) → gets OAuth token.
+
+# Backend (userservice): Receives OAuth token → verifies with Supabase → creates/fetches user → returns your JWT.
+
+# Backend (security.py): Only decodes JWT to get current_user, checks premium/role.
+
+# ✅ Summary: Keep OAuth in userservice. security.py only deals with token verification and access control. This keeps a clean separation between user operations and security enforcement.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Based on our conversations, here's a comprehensive breakdown of your project features and the real-time architecture needed:
+
+## 🎯 **Project Features Overview**
+
+### **📊 Backend Core Features**
+1. **Multi-tenant SEO Platform** with user management
+2. **AI-Powered SEO Analysis** (keyword, semantic, schema, competitor, performance agents)
+3. **Automated SEO Recommendations** with deployment capabilities
+4. **Real-time monitoring** and performance tracking
+5. **CMS Integration** for 12+ platforms
+6. **Content Publishing Automation**
+
+### **✍️ AI Blog Writer Features**
+1. **Topic Suggestion** based on competitor analysis
+2. **Content Strategy Generation** (keyword research, intent analysis, outlines)
+3. **AI Content Creation** with strict word count control
+4. **Media Asset Generation** (images, YouTube videos, screenshots)
+5. **FAQ Generation** and content optimization
+6. **Quality Review** and scoring
+7. **Multi-language Support** (30+ languages)
+8. **CMS Auto-publishing**
+
+### **🔍 On-Page SEO Features**
+1. **Comprehensive SEO Audits** (technical, content, performance)
+2. **AI Recommendation Engine** with impact scoring
+3. **Automated Fix Deployment** to user websites
+4. **Historical Tracking** and improvement metrics
+5. **Competitor Analysis** and gap identification
+6. **Schema Markup** generation and validation
+
+### **🎨 Frontend Features**
+1. **Dashboard** with SEO scores and recommendations
+2. **Content Management** for blog articles
+3. **Real-time Audit Results** visualization
+4. **Task Progress Tracking**
+5. **CMS Integration Management**
+6. **Performance Analytics**
+
+## 🔥 **Real-Time Listener Architecture**
+
+### **What to Listen For:**
+
+#### **1. Database Events (Supabase Real-time)**
+```python
+# Primary channels to subscribe to:
+CHANNELS = {
+    "TASKS": "tasks:status",           # Task creation/completion
+    "AUDITS": "seo_audit_results",     # New audit results
+    "DEPLOYMENTS": "deployment_logs",  # SEO fixes deployed
+    "BLOG_RESULTS": "blog_results",    # Blog generation complete
+    "CMS_PUBLISHING": "cms_publishing" # Content published to CMS
+}
+```
+
+#### **2. Task Service Events**
+```python
+TASK_EVENTS = [
+    "task_created",           # New task started
+    "task_progress",          # Progress updates (10%, 20%, etc.)
+    "task_completed",         # Task finished successfully
+    "task_failed",            # Task failed with error
+    "agent_started",          # Specific agent started working
+    "agent_completed"         # Agent finished its part
+]
+```
+
+#### **3. External Service Events**
+```python
+EXTERNAL_EVENTS = {
+    "CLOUDINARY": ["image_uploaded", "upload_failed"],
+    "REDIS": ["cache_updated", "rate_limit_hit"],
+    "SUPABASE": ["db_error", "connection_issue"],
+    "CMS_API": ["publish_success", "publish_failed"]
+}
+```
+
+## 🏗️ **Task Service Structure**
+
+### **Core Components:**
+
+```python
+class TaskService:
+    def __init__(self):
+        self.task_repo = TaskRepository()
+        self.realtime = RealTimeService()
+    
+    # --------------------
+    # Task Creation
+    # --------------------
+    async def create_seo_audit_task(self, user_id, website_url, options) -> Task:
+        task = await self.task_repo.create_task({
+            "type": "seo_audit",
+            "user_id": user_id,
+            "website_url": website_url,
+            "status": "pending",
+            "options": options
+        })
+        await self.realtime.publish("task_created", task)
+        return task
+    
+    async def create_blog_generation_task(self, user_id, topic, keyword, cms_config) -> Task:
+        task = await self.task_repo.create_task({
+            "type": "blog_generation", 
+            "user_id": user_id,
+            "topic": topic,
+            "target_keyword": keyword,
+            "cms_config": cms_config,
+            "status": "pending"
+        })
+        await self.realtime.publish("task_created", task)
+        return task
+    
+    # --------------------
+    # Task Progress Tracking
+    # --------------------
+    async def update_task_progress(self, task_id: str, progress: int, message: str):
+        await self.task_repo.update_task(task_id, {
+            "progress": progress,
+            "progress_message": message,
+            "updated_at": datetime.utcnow()
+        })
+        await self.realtime.publish("task_progress", {
+            "task_id": task_id, 
+            "progress": progress,
+            "message": message
+        })
+    
+    async def mark_agent_started(self, task_id: str, agent_type: str):
+        await self.realtime.publish("agent_started", {
+            "task_id": task_id,
+            "agent_type": agent_type,
+            "timestamp": datetime.utcnow()
+        })
+    
+    async def mark_agent_completed(self, task_id: str, agent_type: str, result: dict):
+        await self.realtime.publish("agent_completed", {
+            "task_id": task_id,
+            "agent_type": agent_type,
+            "result": result,
+            "timestamp": datetime.utcnow()
+        })
+    
+    # --------------------
+    # Task Completion
+    # --------------------
+    async def complete_task_success(self, task_id: str, result: dict):
+        task = await self.task_repo.update_task(task_id, {
+            "status": "completed",
+            "result": result,
+            "completed_at": datetime.utcnow(),
+            "progress": 100
+        })
+        await self.realtime.publish("task_completed", task)
+        return task
+    
+    async def complete_task_failed(self, task_id: str, error: str):
+        task = await self.task_repo.update_task(task_id, {
+            "status": "failed", 
+            "error": error,
+            "completed_at": datetime.utcnow()
+        })
+        await self.realtime.publish("task_failed", {
+            "task_id": task_id,
+            "error": error,
+            "task": task
+        })
+        return task
+    
+    # --------------------
+    # Task Querying
+    # --------------------
+    async def get_user_tasks(self, user_id: str, limit: int = 50):
+        return await self.task_repo.get_tasks_by_user(user_id, limit)
+    
+    async def get_task_status(self, task_id: str):
+        return await self.task_repo.get_task(task_id)
+    
+    async def get_active_tasks(self, user_id: str):
+        return await self.task_repo.get_tasks_by_status(user_id, ["pending", "processing"])
+```
+
+## 📡 **Real-Time Event Types**
+
+### **High-Priority Events (Must Listen)**
+```python
+HIGH_PRIORITY_EVENTS = {
+    # User-facing progress
+    "TASK_PROGRESS": "task_progress",          # Show progress bars
+    "AUDIT_COMPLETE": "seo_audit_complete",    # Display results
+    "BLOG_READY": "blog_generation_complete",  # Show generated content
+    "CMS_PUBLISHED": "cms_publish_success",    # Confirm publishing
+    
+    # Error handling
+    "TASK_FAILED": "task_failed",              # Show error messages
+    "API_ERROR": "api_error",                  # Service issues
+    "RATE_LIMIT": "rate_limit"                 # Usage limits
+}
+```
+
+### **Background Events (Optional Listening)**
+```python
+BACKGROUND_EVENTS = {
+    # System operations
+    "CACHE_UPDATED": "cache_updated",          # Redis cache changes
+    "IMAGE_PROCESSED": "image_processed",      # Cloudinary uploads
+    "AGENT_STARTED": "agent_started",          # Internal agent status
+    "DB_BACKUP": "database_backup"             # System maintenance
+}
+```
+
+## 🎯 **Specific Event Scenarios**
+
+### **SEO Audit Flow:**
+```python
+# Real-time events during SEO audit
+EVENT_FLOW = [
+    "task_created",           # User clicks "Analyze Website"
+    "agent_started:keyword",  # Keyword agent begins
+    "agent_completed:keyword",# Keyword analysis done
+    "agent_started:semantic", # Semantic analysis begins
+    "task_progress:30%",      # Update progress bar
+    "agent_started:schema",   # Schema analysis begins
+    "task_progress:60%",      # Update progress bar  
+    "seo_audit_complete",     # Final results ready
+    "task_completed"          # Task finished
+]
+```
+
+### **Blog Generation Flow:**
+```python
+# Real-time events during blog creation
+EVENT_FLOW = [
+    "task_created",              # User requests blog
+    "agent_started:strategy",    # Strategy agent begins
+    "agent_completed:strategy",  # Content strategy ready
+    "agent_started:writing",     # Writing agent begins
+    "task_progress:40%",         # Writing in progress
+    "agent_started:media",       # Media generation
+    "agent_started:faq",         # FAQ generation
+    "task_progress:80%",         # Almost done
+    "agent_started:review",      # Quality review
+    "blog_generation_complete",  # Blog ready
+    "cms_publish_started",       # Publishing to CMS
+    "cms_publish_success",       # Published successfully
+    "task_completed"             # All done
+]
+```
+
+## 🔧 **Implementation Priority**
+
+### **Phase 1 (Critical)**
+- Task creation/completion events
+- Progress updates for long-running operations
+- Error notifications
+
+### **Phase 2 (Important)** 
+- SEO audit result streaming
+- Blog generation progress
+- CMS publishing status
+
+### **Phase 3 (Nice-to-have)**
+- Real-time analytics updates
+- System health monitoring
+- Collaborative features (if multi-user)
+
+This architecture ensures users get real-time feedback for all major operations while keeping the system scalable and maintainable!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SCHEDULING WORKFLOW 
+
+## 1️⃣ General principle
+
+* **API endpoints (`backend/src/api/v1/endpoints`)** → **on-demand triggers**. They handle user requests and orchestrate services.
+* **Services (`backend/src/services`)** → **business logic**. They do the heavy lifting: analysis, generation, deployment, relinking.
+* **Scheduler/Celery (`scheduler_service.py` + `tasks.py`)** → **periodic tasks only**, not every workflow.
+
+---
+
+## 2️⃣ Workflow responsibilities
+
+| Workflow                                    | Trigger                    | Service                                                                                     | Scheduling                                                     |
+| ------------------------------------------- | -------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| **SEO Analysis**                            | API (`seo_analysis.py`)    | `seo_workflow_service` → calls `onpageseo` endpoints internally                             | On-demand only                                                 |
+| **SEO AI Recommendations / Deployment**     | API or scheduled           | `pixel_service` (deploys recommendations via Pixel)                                         | Scheduled weekly/monthly via `scheduler_service` + Celery task |
+| **Blog Generation / Writing**               | API (`blog_generation.py`) | `blog_generation_service`                                                                   | On-demand only                                                 |
+| **Blog Publishing to CMS**                  | API (`publish_cms.py`)     | `publish_cms_service`                                                                       | Scheduled weekly/monthly via Celery task                       |
+| **Blog Relinking / Crosslinking**           | Scheduled                  | `crosslinking_service`                                                                      | Scheduled periodically via Celery task                         |
+| **Orchestration Pipelines (full pipeline)** | API (`blog_generation.py`) | `IntegratedOrchestrationService` calling `seo_workflow_service` + `blog_generation_service` | On-demand only                                                 |
+
+---
+
+## 3️⃣ How the layers interact
+
+```
+[User/API call] --> FastAPI endpoint
+    -> Calls Service (business logic)
+        -> Optional: calls other internal APIs (e.g., OnPage SEO microservice)
+```
+
+```
+[Scheduler/Cron] --> scheduler_service
+    -> triggers Celery task in tasks.py
+        -> Calls service (pixel_service, publish_cms_service, crosslinking_service)
+```
+
+* **Important:** Only the *tasks that must happen periodically* go into Celery + scheduler.
+* All analysis and generation workflows are **user-driven**, so no need to schedule.
+
+---
+
+## 4️⃣ File-level responsibilities
+
+| File                         | Responsibility                                                                          |
+| ---------------------------- | --------------------------------------------------------------------------------------- |
+| `blog_generation.py`         | On-demand blog creation + orchestration pipeline.                                       |
+| `seo_analysis.py`            | On-demand SEO analysis API.                                                             |
+| `seo_deploy.py`              | API to trigger SEO recommendations deployment. Can also be called from scheduler.       |
+| `publish_cms.py`             | API to trigger blog publishing. Can also be called from scheduler.                      |
+| `crosslinking_service.py`    | Handles blog relinking. Scheduled only.                                                 |
+| `scheduler_service.py`       | Central scheduler. Only schedules: SEO deployment, blog publishing, relinking.          |
+| `tasks.py`                   | Celery tasks for executing scheduled jobs. Only the 3 periodic workflows above.         |
+| `seo_workflow_service.py`    | Business logic for SEO analysis, recommendations, calling microservices like onpageseo. |
+| `blog_generation_service.py` | Business logic for content creation.                                                    |
+| `pixel_service.py`           | Deployment of SEO recommendations (scheduled via scheduler).                            |
+| `publish_cms_service.py`     | CMS publishing logic (scheduled via scheduler).                                         |
+
+---
+
+## 5️⃣ Recommended scheduling
+
+Only these **periodic workflows**:
+
+1. **SEO recommendations deployment via Pixel** → weekly/monthly.
+2. **Blog publishing to CMS** → weekly/monthly.
+3. **Crosslinking / relinking blogs** → periodic.
+
+Everything else remains **API-driven**, including:
+
+* Blog generation
+* SEO analysis
+* Orchestration pipeline
+ 
+
+
+
+
+
+
+
+
+
+
+So SchedulerService only schedules the Celery tasks, TaskService keeps DB state, and the tasks.py functions actually call the services that do the work.always schedule via SchedulerService, track in TaskService, execute in tasks.py.
+
+
+
+
+
+
+
+
+
+
+
+
+Difference Between tasks.py and task_service.py
+| Aspect              | `tasks.py`                                                                                                         | `task_service.py` / `TaskService`                                                                                |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
+| **Purpose**         | Defines **Celery tasks** (actual execution layer). Executes business logic indirectly via services.                | Central **task management service** (create tasks, retry, cancel, list tasks). Handles persistence in DB.        |
+| **Scope**           | Execution: CMS publishing, blog generation pipeline, SEO batch analysis, cleanup, retry.                           | Orchestration / persistence: handles task records in `blog_tasks`, `seo_tasks`, `task_agent_subtasks`, metadata. |
+| **Dependencies**    | Calls service layer (`publish_cms_service`, `blog_generation_service`, etc.) to do the real work.                  | Calls database clients (`supabase_client`) and optionally `scheduler_service` to schedule Celery jobs.           |
+| **Async vs Celery** | Celery task functions are **sync** from Python’s point of view; they can wrap async services with `asyncio.run()`. | Mostly `async` functions, working at DB / orchestration level.                                                   |
+| **Who calls it?**   | Scheduler (Celery) executes tasks asynchronously.                                                                  | Your API, internal logic, or scheduler calls `TaskService` to create or manage tasks.                            |
+4️⃣ Celery vs. Service Responsibilities
+| Layer                                                                                    | Responsibility                                                                  |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **Celery (`tasks.py`)**                                                                  | Schedules & executes tasks asynchronously. Knows nothing about business logic.  |
+| **Service layer (`publish_cms_service.py`, `pixel_service.py`, `crosslink_service.py`)** | Implements the **actual work**. Celery just calls these.                        |
+| **Scheduler (`scheduler_service.py`)**                                                   | Centralizes task submission, retries, status, cancellation. Calls Celery tasks. |
+
+
+
+
+
+
+
+
+
+
+
+
+| Question                       | Recommendation                                                   | Reason                                           |
+| ------------------------------ | ---------------------------------------------------------------- | ------------------------------------------------ |
+| TaskService generate pixel_id? | ❌ Keep in PixelService                                           | SRP, consistency, frontend integration           |
+| pixel.js integration           | ✅ Keep in frontend, PixelService provides JSON + deployment info | Backend is data source; frontend executes script |
+| `get_pixel_activity`           | ✅ Keep in PixelService (or optional)                             | Analytics / dashboards; fits pixel domain        |
+3️⃣ Endpoint correctness
+
+You have two endpoints calling PixelService:
+
+/seo/deploy (from seo_deploy.py)
+
+result = await pixel_service.deploy_recommendations(...)
+
+
+✅ This is correct. It calls the orchestrator for task-based deployments. The flow is:
+
+API -> TaskService.create_task -> PixelService.deploy_recommendations
+
+
+/seo/pixel/deploy (from seo_pixel.py)
+
+optimizations = await pixel_service.get_active_optimizations(pixel_id, url)
+
+
+Purpose: pixel.js calls this URL to fetch live optimization data.
+
+This is different from the orchestrator: it does not create deployments, it just returns JSON for frontend pixel to apply.
+
+So these two are NOT redundant.
+
+Endpoint	Purpose	Caller
+/seo/deploy	Deploy recommendations for a task	Admin/API call / internal system
+/seo/pixel/deploy	Serve live optimizations to pixel.js	Frontend pixel script (JS)
+
+✅ They serve different audiences.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SEO RECOMMENDATIONS DEPLOYMENT VIA Pixel
+1. UserService → Creates user/website config
+2. SEOAnalysisService → Generates AI recommendations  
+3. PixelService → Creates pixel + deployment plan
+4. SchedulerService → Schedules deployment (weekly)
+5. Celery Task → Triggers deployment execution
+6. PixelService.deploy_optimizations() → Actually applies changes
+7. RealtimeListenerService → Notifies frontend of completion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 🔍 What is “OTTO SEO Pixel”?
+
+From their site:
+
+* OTTO SEO offers automation of SEO best practices by applying changes (meta tags, schema, technical fixes) *after you approve* them in their dashboard. ([Search Atlas - Advanced SEO Software][1])
+* To enable this, they ask users to **insert a pixel script (snippet)** into the site’s `<head>` — the “OTTO Pixel.” ([Search Atlas - Advanced SEO Software][1])
+* Once that pixel is in place, OTTO can “audit your website data” and “make optimizations” (after the user approves) without requiring direct access to source code. ([Search Atlas - Advanced SEO Software][1])
+* They also mention rollbacks: you can revert changes. ([Search Atlas - Advanced SEO Software][1])
+
+So, in summary: they use the pixel as a gate — once it's installed, their system can push front-end changes on your site (via JavaScript) that reflect approved SEO tweaks.
+
+---
+
+## ⚙️ How OTTO Pixel likely works (architecture + flow)
+
+Based on how other pixels / SEO deployment tools work, and OTTO’s claims, here’s a likely design:
+
+| Component                 | Role in OTTO’s setup                                                                                                                                                                        |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Pixel Snippet**         | Small JS snippet users paste. It probably bootstraps a full JS loader (OTTO’s code) with a unique pixel ID.                                                                                 |
+| **Loader JS (hosted)**    | The snippet loads a shared JS file from their CDN / server. This JS has logic to fetch optimizations, apply them, and perhaps manage rollback.                                              |
+| **Backend / API**         | The pixel loader requests from OTTO’s backend: “What optimizations are active for pixel_id on this page URL?”                                                                               |
+| **Cache / Database**      | To avoid hitting DB on every request, OTTO likely caches optimizations per page or pixel in memory/Redis/edge.                                                                              |
+| **Deploy actions**        | When a user “deploys changes” in their dashboard, OTTO computes optimizations (title, meta, schema, etc.), stores them in a DB or deployment plan. Then the pixel loader will deliver them. |
+| **Rollback / versioning** | OTTO maintains versions of optimizations so changes can be rolled back. The pixel loader may choose which version is active.                                                                |
+
+**Flow (when a page loads):**
+
+1. Browser loads pixel snippet in `<head>`.
+2. Snippet loads OTTO’s hosted JS, passing `pixelId` and page URL.
+3. Loader JS calls OTTO’s `/deploy` API to fetch active optimizations for that pixel + URL.
+4. The loader JS applies optimizations to DOM (document title, meta descriptions, schema script, etc.).
+5. Perhaps the loader or pixel also logs that the page was visited (performance, usage).
+
+---
+
+## ✅ Strengths & Trade-offs in OTTO’s approach
+
+**Strengths:**
+
+* **Zero backend changes:** The user doesn’t need to modify server code—just paste a snippet.
+* **Dynamic control:** The OTTO team can push new JS logic centrally (since the snippet loads a shared JS). Users don’t need to update their snippet.
+* **Granular changes:** They can apply tweaks per page or globally, version them, and allow rollbacks.
+* **Abstraction:** Hides complexity from users; they see a dashboard to approve changes, rather than editing many templates.
+
+**Trade-offs / challenges:**
+
+* **Performance cost:** Each page load may still require a fetch to OTTO’s backend (unless fully cached). This can add latency.
+* **Cache invalidation complexity:** When a user deploys new optimizations, OTTO must ensure stale cached versions are cleared or updated.
+* **Reliance on JS:** Changes are client-side, so SEO effects depend on JS executing before search engines or users fetch content. For critical SEO elements (like title, meta description), you may need fallback or server-side rendering support.
+* **Security & correctness:** Applying JS-based SEO changes must be safe (avoid DOM flicker, race conditions, conflicts with existing site scripts).
+
+---
+
+## 🧩 How this compares to your project and lessons you can take
+
+Your setup (pixel + backend) is quite aligned with what OTTO appears to do. Here are a few lessons and points you should consider:
+
+1. **Use a shared JS loader, not inline full logic**
+
+   * The snippet should just bootstrap and load your real logic from CDN or server.
+   * That way, when you enhance logic, users don’t have to update the snippet.
+
+2. **Cache aggressively**
+
+   * Use Redis/edge caching so the backend isn’t hit on every page load.
+   * For each `(pixel_id, page_url)` pair, cache the optimization JSON.
+   * Invalidate cache when deployments occur.
+
+3. **Support versioning & rollback**
+
+   * Keep multiple versions of deployed optimizations.
+   * Pixel loader should pick “active” version.
+   * Allow users to switch back to prior versions.
+
+4. **Minimal JS overhead**
+
+   * The pixel loader should be small, async, and non-blocking.
+   * Apply DOM changes in a way that avoids flicker or layout shifts.
+
+5. **Consider server-side fallback**
+
+   * For pages rendered on the server or for SEO crawlers, if your site supports SSR or server-rendered meta tags, you might pair pixel-based updates with server-side rendered updates.
+   * For example, once a user approves changes, you might push them to site templates or CMS so that new pages render with correct tags without needing JS.
+
+6. **Versioned asset URLs**
+
+   * Use versioned JS file names or query parameters so that new loader logic pushes out across all clients cleanly.
+
+
+
+
+
+
+
+
+
+CMS Integrations
+PublishCMSService
+    └── uses create_cms_client(credentials)
+           └── CMSApiClient (handles common auth & HTTP)
+                  └── delegates platform-specific logic → wordpress_client.py, shopify_client.py, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+MangoSEO SEO Deployment 
+deploy_recommendations()
+ └─> create_deployment_plan()
+ └─> _format_optimizations() + cache
+ └─> _deploy_via_pixel()
+      └─> fetch recommendations
+      └─> cache again (redundant cache is safe)
+      └─> log deployment activity
+      
+Frontend loads pixel.js
+      ↓
+Pixel.js calls backend endpoint (/seo/pixel/deploy)
+      ↓
+Backend PixelService reads deployment_plan + ai_recommendations
+      ↓
+Returns JSON optimizations to pixel.js
+      ↓
+Pixel.js applies optimizations dynamically
+
+Static:
+siteId (generated once per website/user)
+api_base_url (backend endpoint)
+Dynamic:
+url (current page)
+Fetched optimizations JSON from backend (/seo/pixel/deploy)
+Applied DOM updates (title, meta, schema)
+✅ This design already supports dynamic fetching of optimizations, so changes in deployment plans reflect immediately when the page loads.
+
+
+
+
+
+
+
+
+
+
+
+✅ Key distinction:
+tasks.py → what to do (execution).
+scheduler_service.py → when to do it (schedule / retry / monitor).
+task_service.py → track and manage tasks in DB, used by APIs to create/initiate tasks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CELERY WORKING
+1️⃣ How your code currently works
+tasks.py defines Celery tasks using @shared_task.
+scheduler_service.py imports these tasks and schedules them via apply_async or delay.
+The actual Celery app instance (app) lives only in celery_app.py.
+scheduler_service.py does use the app when calling AsyncResult(..., app=app) to track or cancel tasks.
+2️⃣ Why you don’t import app directly in tasks.py
+@shared_task is designed to register tasks with any Celery app at runtime, not necessarily a specific app instance.
+This allows you to decouple task definitions from a specific broker/backend, which is useful in:
+Testing (can register with a fake app)
+Multiple Celery apps in the same project
+If you hardcode from celery_app import app in tasks.py and then call app.task(...), the task is tied to that app immediately. That’s fine in small projects, but it reduces modularity.
+3️⃣ How your current pattern works
+tasks.py defines tasks with @shared_task → tasks are registered globally.
+scheduler_service.py schedules tasks via:
+celery_task.apply_async(args=args, eta=eta)
+→ this automatically uses the Celery app configured in celery_app.py when the worker starts, because include=["backend.src.tasks"] in the app ensures the tasks are registered.
+Tracking and cancelling tasks explicitly uses the app:
+AsyncResult(celery_task_id, app=app)
+→ needed only when querying the result backend.
+✅ This is a normal and recommended pattern in Celery projects. It keeps:
+Tasks decoupled from a specific app
+Scheduling and result tracking app-aware
+Benefits of This Pattern:
+Pattern	Benefit	Real-World Analogy
+Tasks decoupled from app	Can test recipes without a kitchen	Test recipes at home
+One app, multiple tasks	One kitchen cooks many dishes	One restaurant serves many meals
+Flexible deployment	Can change kitchens easily	Move restaurant location
+
+
+
+
+
+
+
+
+
+BACKEND Endpoints
+Orchestration
+
+/api/v1/orchestrate → request inline (could be extracted as OrchestrationRequest) ✅
+/api/v1/orchestration-status/:taskId → taskId: string ✅
+/api/v1/cancel-orchestration/:taskId → taskId: string ✅
+Topics
+
+/api/v1/topics → TopicRequest ✅
+CMS Publish
+
+/api/v1/publish/article/:articleId → articleId: string/UUID ✅
+/api/v1/publish/publishing-status/:taskId → taskId: string ✅
+SEO Analysis
+
+/api/v1/seo/analyze → SEOAnalysisRequest ✅
+/api/v1/seo/analysis/:taskId → taskId: string ✅
+/api/v1/seo/batch/analyze → BatchAnalysisRequest ✅ (optional batch request type exists)
+
+SEO Pixel
+
+/api/v1/seo/pixel/generate → PixelGenerationRequest ✅
+/api/v1/seo/pixel/rollback → PixelRollbackRequest ✅
+/api/v1/seo/pixel/:pixelId/status → pixelId: string ✅
+/api/v1/seo/pixel/deploy → pixelId: string + url: string ✅
+/api/v1/seo/pixel/:pixelId.js → no request body, just path param ✅
+Health Checks
+
+/api/v1/health* → all GET endpoints, no request body needed ✅
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Frontend + RealtimeListenerService
+| Feature          | Backend API | Listener / DB | Approach                                  |
+| ---------------- | ----------- | ------------- | ----------------------------------------- |
+| CMS Integrations | ❌           | ✅             | Listener-only                             |
+| CMS Deployments  | ✅           | ✅             | Hybrid: API trigger + Listener for status |
+| CMS Sync Content | ❌           | ✅             | Listener-only                             |
+| Orchestration    | ✅           | optional      | API-driven                                |
+| Topics           | ✅           | ❌             | API-driven                                |
+| SEO Analysis     | ✅           | optional      | API-driven                                |
+| SEO Pixel        | ✅           | optional      | API-driven                                |
+| Health Checks    | ✅           | ❌             | API-driven                                |
+
+
+
+
+
+
+
+
+
+
+
+
+Frontend
+
+
+| Frontend Feature                | Backend Endpoint                                           | Notes / Flow                                                                                                                                                                                                 |
+| ------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Start Blog Generation**       | `/api/v1/blog_generation` (blog_generation.py)             | Frontend sends article info (topic, website_url, language, etc.) → backend validates → calls `BlogGenerationService.start_article_generation()` → backend talks to `ai_blog_writer` microservice internally. |
+| **Suggest Blog Topics**         | `/api/v1/blog_topic_generation` (blog_topic_generation.py) | Frontend sends keywords or website → backend processes → microservice returns suggestions.                                                                                                                   |
+| **Check Task Status / Results** | `/api/v1/blog_generation` (GET or `/results` endpoint)     | Frontend polls or subscribes via WebSocket (if implemented) to get real-time updates. Backend queries Supabase tasks table.                                                                                  |
+| **Publish to CMS**              | `/api/v1/publish_cms` (publish_cms.py)                     | Frontend sends request to publish generated blog → backend uses `publish_cms_service` → integrates with CMS clients.                                                                                         |
+| **SEO Analysis**                | `/api/v1/seo_analysis` (seo_analysis.py)                   | Frontend sends URL or content → backend runs `seo_workflow_service` → returns SEO metrics.                                                                                                                   |
+| **Crosslink / Pixel Events**    | `/api/v1/seo_pixel` & `crosslinking_service`               | Optional advanced SEO features. Frontend triggers backend endpoints; backend handles actual logic.                                                                                                           |
+| **Website Onboarding**          | `/api/v1/blog_generation` → `submit_website_onboarding`    | Frontend provides website URL → backend schedules onboarding task with AI blog writer.                                                                                                                       |
+
+
+
+Based on the provided data, here's a comprehensive breakdown of all frontend-related information:
+
+## 🎯 **Frontend Architecture & Technology Stack**
+
+### **Core Technologies**
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Shadcn/UI components + Tailwind CSS
+- **State Management**: Zustand stores
+- **Authentication**: Supabase integration
+
+
+## 🚀 **Key Frontend Features & Pages**
+
+### **1. Landing/Marketing Pages**
+- **URL**: `mangoseo.com`
+- **Sections**:
+  - Hero section with success stats (100k+ articles, 0.6B impressions, 15M clicks)
+  - "What is MangoSEO" section
+  - Integration showcase (CMS platforms supported)
+  - Supported languages (50+ languages)
+  - Article examples and types
+  - User testimonials ("Wall of Love")
+  - Pricing section with tiered plans
+  - FAQ section
+  - Call-to-action sections
+
+### **2. Main Application Dashboard**
+- **URL**: `app.mangoseo.com`
+- **Features**:
+  - Full-screen terminal-like conversational interface
+  - Real-time progress tracking
+  - Article management and preview
+  - SEO analysis results display
+  - Content planning and scheduling
+
+### **3. Conversational UI Components**
+- **Chat Interface**: Main container for AI conversations
+- **Message Bubble**: Renders Q/A for AI or user interactions
+- **Terminal IO**: Green-text simulation logs
+- **Option Selector**: Buttons/menus for user choices
+- **Input Field**: Free-form text input
+- **Progress Indicator**: Shows task progress for long operations
+
+### **4. Editor Components**
+- **Main Editor**: Content creation and editing interface
+- **Autopilot Toggle**: AI-assisted writing mode
+- **Blog Preview Modal**: Live preview of generated content
+- **Menu Popup**: Contextual actions and options
+
+### **5. Side Panel Components**
+- **Settings**: User preferences and configuration
+- **Usage Stats**: Track articles generated, impressions, clicks, CTR
+- **CMS Setup**: Integration management for various platforms
+- **Article Editor Panel**: Edit generated articles
+- **Audit Results Panel**: Display SEO audit results
+- **Blueprint Panel**: Show SEO blueprints and recommendations
+- **Content Queue**: Manage published and scheduled articles
+
+## 🎨 **UI/UX Design Patterns**
+
+### **Conversational Interface**
+- Terminal-style green text logs for AI operations
+- Chat-based interaction for content planning
+- Real-time progress updates during content generation
+- Interactive choice selectors for user decisions
+
+### **Dashboard Layout**
+- Main editor area with conversational UI
+- Side panel for settings and analytics
+- Modal overlays for previews and detailed views
+- Responsive design for different screen sizes
+
+## 🔌 **Integration & Communication**
+
+### **Backend Communication**
+- **Exclusive communication** with FastAPI backend only
+- **No direct calls** to AI Worker microservice
+- **Real-time updates** via polling backend for task status
+- **WebSocket/Supabase real-time** for live updates
+
+### **CMS Integration Support**
+- **WordPress, Webflow, Ghost, Shopify, Wix**
+- **Notion, HubSpot, Framer, Medium, Squarespace**
+- **Blogger, Substack, Custom Integrations**
+- **Next.js, REST API, Webhooks**
+
+### **Authentication Flow**
+- **Supabase OAuth integration** (Google login)
+- **JWT token management**
+- **User session persistence**
+- **Subscription-based access control**
+
+## 📊 **State Management**
+
+### **Zustand Stores**
+- **use-user-store**: User data, authentication, subscription status
+- **use-task-store**: Task progress, AI operation states
+- **use-cms-store**: CMS connection states and configurations
+- **use-conversation-store**: Chat history, current agent state
+
+### **Providers**
+- **User Provider**: Global user context
+- **Subscription Provider**: Plan and billing information
+- **Supabase Provider**: Authentication and real-time updates
+
+## 🛠️ **Development Features**
+
+### **Testing & Quality**
+- **Unit Tests**: Jest + React Testing Library
+- **Performance Tests**: Lighthouse integration
+- **Type Safety**: Full TypeScript implementation
+
+### **Performance Optimization**
+- **Code splitting** with Next.js App Router
+- **Lazy loading** for heavy components
+- **Caching strategies** for API responses
+- **Optimized bundle size**
+
+## 🎯 **User Experience Features**
+
+### **Onboarding Flow**
+- One-click website URL submission
+- Automated site analysis and content planning
+- Preference customization (image style, tone, frequency)
+
+### **Content Management**
+- Approve/decline AI-suggested articles
+- Schedule content publishing
+- Manual editing capabilities
+- Multi-language support interface
+
+### **SEO Features**
+- Real-time SEO audit results
+- Keyword research and clustering interface
+- Rank tracking dashboard
+- Internal linking management
+
+### **Analytics & Reporting**
+- Usage statistics dashboard
+- Performance metrics (impressions, clicks, CTR)
+- Subscription management interface
+- CMS integration status
+
+## 🔒 **Access Control**
+
+### **Route Protection**
+- **Public routes**: Landing page, pricing, features info
+- **Protected routes**: Main editor, dashboard, profile (subscribers only)
+- **Tier-based features**: Different functionality based on subscription plan
+
+This frontend architecture provides a modern, scalable, and user-friendly interface for the comprehensive MangoSEO platform, supporting both marketing presence and the main AI-powered SEO application.
